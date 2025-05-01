@@ -33,7 +33,7 @@ export default function DonasiUmum() {
                 alt="Kembali"
                 className="h-5 w-5"
             />
-            Kembali
+            <a href="/">Kembali</a>
         </button>
       </div>
     </div>

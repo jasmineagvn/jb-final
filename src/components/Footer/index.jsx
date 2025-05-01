@@ -34,22 +34,22 @@ export default function Footer() {
             <h1 className="text-base text-white font-semibold">Informasi</h1>
             <ul className="flex flex-col gap-3.5">
               <li>
-                <a href="#" className="text-base text-white whitespace-nowrap">
+                <a href="/tentangkami" className="text-base text-white whitespace-nowrap hover:underline underline-offset-4 transition-all duration-300">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-white">
+                <a href="/daftar" className="text-base text-white hover:underline underline-offset-4 transition-all duration-300">
                   Daftar
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-white">
+                <a href="#" className="text-base text-white hover:underline underline-offset-4 transition-all duration-300">
                   Program
                 </a>
               </li>
               <li>
-                <a href="#" className="text-base text-white">
+                <a href="#" className="text-base text-white hover:underline underline-offset-4 transition-all duration-300">
                   Donasi
                 </a>
               </li>

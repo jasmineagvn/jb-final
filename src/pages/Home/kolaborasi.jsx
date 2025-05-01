@@ -11,24 +11,24 @@ const PartnerSection = () => {
   
         <div className="flex flex-col gap-24 mt-24 mb-32">
             <div className="flex flex-wrap justify-center gap-24">
-                <img src="/icons/pertamina.png" className="w-[120px] h-[80px] object-contain"/>
-                <img src="/icons/unilever.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/kadin.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/kitabisa.png" className="w-[120px] h-[80px] object-contain" />
+                <img src="/icons/pertamina.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg"/>
+                <img src="/icons/unilever.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/kadin.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/kitabisa.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
             </div>
             <div className="flex flex-wrap justify-center gap-24">
-                <img src="/icons/kaseto.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/bakrie.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/yayasandunia.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/FIM.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/ui.png" className="w-[120px] h-[80px] object-contain" />
+                <img src="/icons/kaseto.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/bakrie.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/yayasandunia.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/FIM.png" className="w-[120px] h-[80px] object-containtransition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/ui.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
             </div>
 
             <div className="flex flex-wrap justify-center gap-24">
-                <img src="/icons/binus.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/untirta.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/unpad.png" className="w-[120px] h-[80px] object-contain" />
-                <img src="/icons/unpam.png" className="w-[120px] h-[80px] object-contain" />
+                <img src="/icons/binus.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/untirta.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/unpad.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
+                <img src="/icons/unpam.png" className="w-[120px] h-[80px] object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg" />
             </div>
         </div>
       </section>

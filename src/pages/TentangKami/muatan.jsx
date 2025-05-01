@@ -44,7 +44,7 @@ const Muatan = () => {
       <h2 className="text-2xl font-semibold">Muatan Belajar Non-Akademik</h2>
       <div className="flex flex-wrap justify-center gap-6 mt-[80px]">
         {cards.map((card, index) => (
-          <div key={index} className="bg-white dark:bg-[#3C3F41]  flex flex-col w-[250px] h-[300px] shadow-2xl py-14">
+          <div key={index} className="bg-white dark:bg-[#3C3F41]  flex flex-col w-[250px] h-[300px] shadow-lg py-14">
             <img src={card.image} alt="" className="mx-auto mb-4" />
             <h2 className="font-bold text-xl mb-2">{card.title} </h2>
             <p className="text-sm">

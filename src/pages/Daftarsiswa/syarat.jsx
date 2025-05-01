@@ -41,7 +41,7 @@ export default function DaftarSiswa() {
             Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga Baik? Yuk, Klik Daftar Sekarang!
             </h2>
             <button className="bg-orange-400 hover:bg-orange-500 text-white py-3 px-6 rounded-full transition">
-            Daftar Siswa Sekarang
+            <link rel="stylesheet" href="./daftarsiswa/formsiswa" />Daftar Siswa Sekarang
             </button>
         </div>
     </div>

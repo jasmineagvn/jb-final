@@ -43,7 +43,7 @@ function Misi() {
             </div>
           </div>
 
-          <Button variant="md:w-[510px] w-full">Pelajari lebih lanjut</Button>
+          <Button variant="md:w-[510px] w-full"><a href="/tentangkami">Pelajari lebih lanjut</a></Button>
         </div>
 
         <img src="/icons/program/Volunteer.png" alt="" className="w-[500px] hidden md:flex" />

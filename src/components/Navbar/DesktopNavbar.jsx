@@ -165,6 +165,14 @@ function DesktopNavbar() {
                   Donasi Umum
                 </a>
               </li>
+              <li>
+                <a
+                  href="/donasiumum"
+                  className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
+                >
+                  Kampanye
+                </a>
+              </li>
             </ul>
           </details>
         </li>
