@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 function DaftarRelawan() {
   return (
     <>
-      <Footer/>
+      <Footer />
     </>
   );
 }

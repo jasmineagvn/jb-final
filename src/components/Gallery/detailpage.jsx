@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import DetailGaleri1 from "../DetailGalleri1";
-import DetailGaleri2 from "../DetailGalleri2";
-import DetailGaleri3 from "../DetailGalleri3";
+import DetailGalleri1 from "../DetailGalleri1";
+import DetailGalleri2 from "../DetailGalleri2";
+import DetailGalleri3 from "../DetailGalleri3";``
 import DetailGalleri4 from "../DetailGalleri4";
 import DetailGalleri5 from "../DetailGalleri5";
 
@@ -12,11 +12,11 @@ function DetailPage() {
   const renderDetail = () => {
     switch (kebaikanId) {
       case 1:
-        return <DetailGaleri1 />;
+        return <DetailGalleri1 />;
       case 2:
-        return <DetailGaleri2 />;
+        return <DetailGalleri2 />;
       case 3:
-        return <DetailGaleri3 />;
+        return <DetailGalleri3 />;
       case 4:
         return <DetailGalleri4 />;
       case 5:

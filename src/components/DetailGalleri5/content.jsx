@@ -94,9 +94,9 @@ function Content() {
         </div>
 
         <div className="mt-16 mx-8 md:mx-0 bg-[#EC901D] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer ">
-          <Link to="/galeri">
+          <a href="/galeri">
             <ChevronLeft className="text-white" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

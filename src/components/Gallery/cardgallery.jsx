@@ -7,6 +7,11 @@ function CardGallery({ currentPage, cardsPerPage, cards }) {
   const startIndex = (currentPage - 1) * cardsPerPage;
   const currentCards = cards.slice(startIndex, startIndex + cardsPerPage);
 
+  const handleCardClick = (id) => {
+    window.scrollTo(0, 0); 
+    navigate(`/detail/${id}`);
+  };
+
   return (
     <div>
       <div className="flex justify-between mt-16 items-center">
@@ -24,7 +29,7 @@ function CardGallery({ currentPage, cardsPerPage, cards }) {
           <div
             key={card.id}
             className="w-[320px] py-4 px-5 bg-white gap-6 flex flex-col items-center justify-center rounded shadow cursor-pointer"
-            onClick={() => navigate(`/detail/${card.id}`)}
+            onClick={() => handleCardClick(card.id)} // Panggil handler dengan ID kartu
           >
             <img
               src={card.image || "/icons/default-image.png"}

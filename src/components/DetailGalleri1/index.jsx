@@ -3,7 +3,7 @@ import Hero from "../Hero";
 import Content from "./content";
 import Footer from "../Footer";
 
-function DetailGaleri1() {
+function DetailGalleri1() {
   return (
     <div>
       <Hero
@@ -17,4 +17,4 @@ function DetailGaleri1() {
   );
 }
 
-export default DetailGaleri1;
+export default DetailGalleri1;

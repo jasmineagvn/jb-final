@@ -71,29 +71,7 @@ const Testimoni = () => {
           mereka membuktikan bahwa pendidikan bisa mengubah masa depan.
         </p>
       </div>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {testi.map((item, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 dark:bg-[#3C3F41] p-4 rounded-2xl shadow-md hover:shadow-lg transition-shadow animate-slide-horizontal"
-          >
-            <div className="flex items-start space-x-4">
-              <img
-                src={item.profile}
-                alt={item.nama}
-                className="w-12 h-12 rounded-full object-cover"
-              />
-              <div className="flex flex-col w-full max-w-[500px]">
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mt-6">
-                  {item.nama}
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-300">{item.role}</p>
-                <p className="text-gray-700 dark:text-white  mb-4 mt-4">{item.desc}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      
     </div>
   );
 };

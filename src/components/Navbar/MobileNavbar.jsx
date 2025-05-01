@@ -1,18 +1,25 @@
 import { useTheme } from "@/components/themeprovider";
 import { Sun, Moon } from "lucide-react";
-import { Button } from "../ui/button";
-import { MenuIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { MenuIcon, CircleCheck, ChevronDown, CircleHelp } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
+import {
+  Menubar,
+  MenubarMenu,
+  MenubarTrigger,
+  MenubarContent,
+  MenubarItem,
+} from "@/components/ui/menubar";
 
 function MobileNavbar() {
   const { theme, setTheme } = useTheme();
@@ -24,18 +31,24 @@ function MobileNavbar() {
   };
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = (e) => {
+    e.preventDefault(); // Prevent any unintended link actions
+    setIsDropdownOpen((prev) => !prev);
+  };
 
   return (
     <div className="flex md:hidden">
       <button onClick={handleThemeChange}>
         {theme === "dark" && (
           <h1>
-            <Moon></Moon>
+            <Moon />
           </h1>
         )}
         {theme === "light" && (
           <h1>
-            <Sun></Sun>
+            <Sun />
           </h1>
         )}
       </button>
@@ -49,51 +62,101 @@ function MobileNavbar() {
         <SheetContent>
           <SheetHeader>
             <SheetTitle>Menu</SheetTitle>
-            <SheetDescription>janji baik</SheetDescription>
           </SheetHeader>
 
           <nav className="flex flex-col gap-4 mt-6 mx-2">
             <Button
               variant="ghost"
-              className="flex items-center gap-3 justify-start"
+              className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
               <Link to="/">Beranda</Link>
             </Button>
+
+            {/* Menubar for "Tentang Kami" */}
+            <Menubar>
+              <MenubarMenu>
+                <MenubarTrigger className="flex items-center w-full justify-between">
+                  Tentang Kami
+                  <ChevronDown className="h-4 w-4" />
+                </MenubarTrigger>
+                <MenubarContent>
+                  <MenubarItem>
+                    <Link to="/tentangkami">Tentang Kami</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/jbonnews">JB On News</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/divisikami">Divisi</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/galeri">Galeri</Link>
+                  </MenubarItem>
+                </MenubarContent>
+              </MenubarMenu>
+            </Menubar>
+            
+            {/* Menubar for daftar */}
+            <Menubar>
+              <MenubarMenu>
+                <MenubarTrigger className="flex items-center w-full justify-between">
+                  Daftar
+                  <ChevronDown className="h-4 w-4" />
+                </MenubarTrigger>
+                <MenubarContent>
+                  <MenubarItem>
+                    <Link to="/tentangkami">Daftar Siswa</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/jbonnews">Daftar Relawan</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/divisikami">Berkolaborasi</Link>
+                  </MenubarItem>
+                </MenubarContent>
+              </MenubarMenu>
+            </Menubar>
+
             <Button
               variant="ghost"
-              className="flex items-center gap-3 justify-start"
+              className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/service">Tentang Kami</Link>
+              <Link to="/">
+                Program
+              </Link>
             </Button>
+
+            {/* Menubar for donasi */}
+            <Menubar>
+              <MenubarMenu >
+                <MenubarTrigger className="flex items-center w-full justify-between">
+                  Donasi
+                  <ChevronDown className="h-4 w-4" />
+                </MenubarTrigger>
+                <MenubarContent>
+                  <MenubarItem>
+                    <Link to="/tentangkami">Berkala Baik</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/jbonnews">Donasi Umum</Link>
+                  </MenubarItem>
+                  <MenubarItem>
+                    <Link to="/divisikami">Kampanye</Link>
+                  </MenubarItem>
+                </MenubarContent>
+              </MenubarMenu>
+            </Menubar>
+
             <Button
               variant="ghost"
-              className="flex items-center gap-3 justify-start"
+              className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/">Daftar</Link>
-            </Button>
-            <Button
-              variant="ghost"
-              className="flex items-center gap-3 justify-start"
-              asChild
-            >
-              <Link to="/">Program</Link>
-            </Button>
-            <Button
-              variant="ghost"
-              className="flex items-center gap-3 justify-start"
-              asChild
-            >
-              <Link to="/">Donasi</Link>
-            </Button>
-            <Button
-              variant="ghost"
-              className="flex items-center gap-3 justify-start"
-              asChild
-            >
-              <Link to="/">Kontak Kami</Link>
+              <Link to="/">
+                Kontak Kami
+              </Link>
             </Button>
           </nav>
         </SheetContent>

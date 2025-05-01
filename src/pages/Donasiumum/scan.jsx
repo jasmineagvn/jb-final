@@ -17,7 +17,7 @@ export default function DonasiUmum() {
       <div className="p-4 rounded-lg mb-2">
         <div className="bg-white p-4 rounded-lg">
           <img
-            src="./icons/QRIS.png"
+            src="/icons/QRIS.png"
             alt="QRIS Janji Baik"
             className="w-[399.73px] h-[526px] mx-auto"
           />

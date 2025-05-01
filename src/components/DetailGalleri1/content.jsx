@@ -1,5 +1,4 @@
 import { ChevronLeft } from "lucide-react";
-import { Link } from "react-router";
 
 function Content() {
   return (
@@ -16,7 +15,7 @@ function Content() {
       </div>
 
       <div className="max-w-6xl mx-auto mt-10">
-        <h1 className="text-xl text-[#01B4BB] font-bold border-b-2 border-black mb-7 pb-5">
+        <h1 className="text-xl text-[#01B4BB] font-bold border-0 px-5 lg:px-0 border-b-2 border-black mb-7 pb-5">
           Pesta Ide Relawan
         </h1>
 
@@ -60,9 +59,9 @@ function Content() {
         </div>
 
         <div className="mt-16 mx-8 md:mx-0 bg-[#EC901D] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer ">
-          <Link to="/galeri">
+          <a href="/galeri">
             <ChevronLeft className="text-white" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

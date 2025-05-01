@@ -67,7 +67,7 @@ const ProgramUnggulan = () => {
           yang lebih luas, dan memastikan mereka memiliki masa depan yang lebih
           baik.
         </p>
-        <Button><a href="/program">Lihat Program di Janji Baik</a></Button>
+        <Button>Lihat Program di Janji Baik</Button>
       </div>
     </section>
   );
