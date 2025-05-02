@@ -9,46 +9,51 @@ function Pagination() {
   const cards = [
     {
       id: 1,
+      title: "Kegiatan Belajar Mengajar",
+      image: "/icons/galerikebaikan/kebaikan7.png",
+    },
+    {
+      id: 2,
       title: "Pesta Ide Relawan",
       image: "/icons/galerikebaikan/kebaikan1.png",
     },
     {
-      id: 2,
+      id: 3,
       title: "Ulang Tahun Janji Baik",
       image: "/icons/galerikebaikan/kebaikan2.png",
     },
     {
-      id: 3,
+      id: 4,
       title: "Graduation Siswa Janji Baik",
       image: "/icons/galerikebaikan/kebaikan3.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "Kelas Kreasi",
       image: "/icons/galerikebaikan/kebaikan4.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "Peringatan Hari Nasional",
       image: "/icons/galerikebaikan/kebaikan5.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "Pengabdian Kepada Masyarakat",
       image: "/icons/galerikebaikan/kebaikan6.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "Kebaikan 7",
       image: "/icons/galerikebaikan/kebaikan1.png",
     },
     {
-      id: 8,
+      id: 9,
       title: "Kebaikan 8",
       image: "/icons/galerikebaikan/kebaikan1.png",
     },
     {
-      id: 9,
+      id: 10,
       title: "Kebaikan 9",
       image: "/icons/galerikebaikan/kebaikan1.png",
     },

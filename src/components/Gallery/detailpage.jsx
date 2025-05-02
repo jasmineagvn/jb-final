@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
-import DetailGalleri1 from "../DetailGalleri1";
-import DetailGalleri2 from "../DetailGalleri2";
-import DetailGalleri3 from "../DetailGalleri3";``
-import DetailGalleri4 from "../DetailGalleri4";
-import DetailGalleri5 from "../DetailGalleri5";
+import PestaIdeRelawan from "../DetailGallery/PestaIdeRelawan";
+import UlangTahun from "../DetailGallery/UlangTahun";
+import GraduationSiswa from "../DetailGallery/GraduationSiswa";
+import KelasKreasi from "../DetailGallery/KelasKreasi";
+import PeringatanHariNasional from "../DetailGallery/PeringatanNasional";
+import KegiatanBelajar from "../DetailGallery/KegiatanBelajar";
 
 function DetailPage() {
   const { id } = useParams();
@@ -12,15 +13,18 @@ function DetailPage() {
   const renderDetail = () => {
     switch (kebaikanId) {
       case 1:
-        return <DetailGalleri1 />;
+        return <KegiatanBelajar />;
       case 2:
-        return <DetailGalleri2 />;
+        return <PestaIdeRelawan />;
       case 3:
-        return <DetailGalleri3 />;
+        return <UlangTahun />;
       case 4:
-        return <DetailGalleri4 />;
+        return <GraduationSiswa />;
       case 5:
-        return <DetailGalleri5 />;
+        return <KelasKreasi />;
+
+      case 6:
+        return <PeringatanHariNasional />;
       default:
         return (
           <div className="flex flex-col items-center justify-center min-h-screen">
