@@ -27,38 +27,26 @@ const testi = [
     nama: "Joshua Jones",
     role: "Alumni Janji Baik",
     desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
-    profile: "/icons/testi1.png",
+    profile: "/icons/testi5.png",
   },
   {
     nama: "David Elnes",
     role: "Relawan Janji Baik",
     desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
-    profile: "/icons/testi5.png",
+    profile: "/icons/testi6.png",
   },
   {
     nama: "Kimberly Mastrangelo",
     role: "Relawan Janji Baik",
     desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
-    profile: "/icons/testi6.png",
-  },
-  {
-    nama: "Katie Sims",
-    role: "Relawan Janji Baik",
-    desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
     profile: "/icons/testi7.png",
-  },
-  {
-    nama: "James Hole",
-    role: "Relawan Janji Baik",
-    desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
-    profile: "/icons/testi1.png",
   },
 ];
 
 const Testimoni = () => {
   return (
-    <div className="py-12 px-6 lg:px-16 mt-44 md:mt-28">
-      <div className="text-center mb-12">
+    <div className="mt-44 md:mt-28">
+      <div className="text-center mb-12 px-6">
         <p className="text-[#01B4BB] font-semibold">
           Testimoni & Kisah Inspiratif
         </p>
@@ -71,7 +59,21 @@ const Testimoni = () => {
           mereka membuktikan bahwa pendidikan bisa mengubah masa depan.
         </p>
       </div>
-      
+      <div className="flex flex-wrap justify-center gap-4 py-10 bg-gray-100">
+        {testi.map((item, index) => (
+          <div
+            key={index}
+            className="flex gap-4 bg-white w-[503px] px-6 py-7 rounded-3xl"
+          >
+            <img src={item.profile} alt={item.nama} className="w-14 h-14" />
+            <div className="flex flex-col gap-4">
+              <h1 className="text-2xl font-bold">{item.nama}</h1>
+              <span className="text-sm text-gray-600">{item.role}</span>
+              <p className="text-gray-600 text-base">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

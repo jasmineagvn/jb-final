@@ -37,7 +37,7 @@ function CardGallery({ currentPage, cardsPerPage, cards }) {
               className="w-full h-[300px]"
             />
             <div className="flex w-full justify-between items-center">
-              <p>{card.title}</p>
+              <p className="text-sm text-gray-600">{card.title}</p>
               <div className="bg-[#EC901D] p-1 rounded-full">
                 <ChevronRight className="text-white" />
               </div>

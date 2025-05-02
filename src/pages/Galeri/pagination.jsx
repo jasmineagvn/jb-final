@@ -75,7 +75,7 @@ function Pagination() {
         <button
           onClick={() => handlePageClick(currentPage - 1)}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+          className="px-4 py-2 bg-gray-200 text-black rounded disabled:opacity-50"
         >
           Prev
         </button>
@@ -97,7 +97,7 @@ function Pagination() {
         <button
           onClick={() => handlePageClick(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-gray-200 rounded disabled:opacity-50"
+          className="px-4 py-2 bg-gray-200 text-black rounded disabled:opacity-50"
         >
           Next
         </button>
