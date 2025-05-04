@@ -68,7 +68,7 @@ const Divisi = () => {
           menghadirkan program terbaik, memastikan setiap inisiatif berjalan
           optimal, dan menciptakan dampak positif bagi mereka yang membutuhkan.
         </p>
-        <Button>Pelajari lebih lanjut</Button>
+        <Button><a href="/divisikami">Pelajari lebih lanjut</a></Button>
       </div>
     </section>
   );
