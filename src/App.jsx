@@ -12,6 +12,7 @@ import DaftarKolaborasi from "./pages/Daftarkolaborasi";
 import KontakKami from "./pages/KontakKami";
 import DonasiBerkala from "./pages/DonasiBerkala";
 import DonasiUmum from "./pages/Donasiumum/scan";
+import Program from "./pages/Program";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/donasiberkala" element={<DonasiBerkala />} />
         <Route path="/donasiumum" element={<DonasiUmum />} />
         <Route path="/kontakkami" element={<KontakKami />} />
+        <Route path="/program" element={<Program />} /> 
       </Routes>
     </>
   );

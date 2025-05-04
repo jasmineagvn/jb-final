@@ -124,9 +124,9 @@ function DesktopNavbar() {
 
         {/* program */}
         <li>
-          <a href="#" className="text-gray-500 dark:text-white">
+          <Link to="/program" className="text-gray-500 dark:text-white">
             Program
-          </a>
+          </Link>
         </li>
 
         {/* donasi */}
