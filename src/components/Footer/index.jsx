@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="md:p-[92px] px-5 py-20 bg-[#01B4BB] relative h-full w-full mt-20">
+    <footer className="md:p-[92px] px-5 py-22 bg-[#01B4BB] relative h-full w-full mt-20">
       <img
         src="/icons/ornamen-titik.png"
         alt=""
         className="absolute w-[150px] top-0"
       />
-      <div className="md:relative flex flex-wrap md:flex-row gap-9 md:gap-0 justify-between">
+      <div className="md:relative flex flex-wrap md:flex-row gap-9 md:gap-0 justify-between items-center">
         <div className="flex flex-col gap-6">
           <img src="/icons/logo.png" alt="" className="w-[98px]" />
           <h1 className="text-base text-white">Tempat Berkesempatan Baik</h1>

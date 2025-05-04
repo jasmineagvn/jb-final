@@ -45,7 +45,7 @@ const testi = [
 
 const Testimoni = () => {
   return (
-    <div className="mt-44 md:mt-28">
+    <div className="mt-[250px] md:mt-28">
       <div className="text-center mb-12 px-6">
         <p className="text-[#01B4BB] font-semibold">
           Testimoni & Kisah Inspiratif
@@ -59,7 +59,7 @@ const Testimoni = () => {
           mereka membuktikan bahwa pendidikan bisa mengubah masa depan.
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 py-10 bg-gray-100">
+      <div className="flex flex-wrap justify-center gap-4 px-5 md:px-0 py-10 bg-gray-100">
         {testi.map((item, index) => (
           <div
             key={index}
