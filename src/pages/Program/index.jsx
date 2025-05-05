@@ -5,6 +5,7 @@ import Lingkungan from "@/components/Program/Lingkungan";
 import Bimbingan from "@/components/Program/Bimbingan";
 import Kesejahteraan from "@/components/Program/Kesejahteraan";
 import Komunitas from "@/components/Program/Komunitas";
+import Footer from "@/components/Footer";
 
 function ProgramPage() {
 
@@ -53,10 +54,10 @@ function ProgramPage() {
           <button
             key={tab.id}
             onClick={() => setActivePage(tab.id)}
-            className={`py-2 rounded-full w-[200px] px-7 ${
+            className={`py-2 rounded-full w-[206px] shadow-lg px-7 ${
               activePage === tab.id
                 ? "text-white bg-[#01B4BB]"
-                : "text-black border-[1px] hover:text-[#EC901D]"
+                : "text-black border-[0.5px] hover:text-[#EC901D]"
             }`}
           >
             {tab.title}
@@ -68,6 +69,7 @@ function ProgramPage() {
       <div className="container mx-auto p-6">
         {tabs.find((tab) => tab.id === activePage)?.component}
       </div>
+      <Footer />
     </div>
   );
 }
