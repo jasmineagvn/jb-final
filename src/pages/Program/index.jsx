@@ -3,6 +3,8 @@ import SekolahGratis from "@/components/Program/SekolahGratis";
 import Hero from "@/components/Hero";
 import Lingkungan from "@/components/Program/Lingkungan";
 import Bimbingan from "@/components/Program/Bimbingan";
+import Kesejahteraan from "@/components/Program/Kesejahteraan";
+import Komunitas from "@/components/Program/Komunitas";
 
 function ProgramPage() {
 
@@ -22,6 +24,16 @@ function ProgramPage() {
       id: "bimbingan",
       title: "Bimbingan & Kesehatan Mental",
       component: <Bimbingan />,
+    },
+    {
+      id: "Kesejahteraan",
+      title: "Kesejahteraan Sosial",
+      component: <Kesejahteraan />,
+    },
+    {
+      id: "Komunitas",
+      title: "Komunitas Kerelawanan",
+      component: <Komunitas />,
     }
   ];
 
@@ -44,7 +56,7 @@ function ProgramPage() {
             className={`py-2 rounded-full w-[200px] px-7 ${
               activePage === tab.id
                 ? "text-white bg-[#01B4BB]"
-                : "text-black border-[1px] hover:text-blue-400"
+                : "text-black border-[1px] hover:text-[#EC901D]"
             }`}
           >
             {tab.title}

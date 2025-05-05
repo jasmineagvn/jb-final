@@ -51,6 +51,22 @@ const beritaCard = [
     description:
       "Sejumlah anak muda komunitas Janji Baik yang fokus pada kegiatan pendidikan memberikan edukasi pendidikan dan permainan kepada...",
   },
+  {
+    image: "/icons/jbonnews/news7.png",
+    title: "Gandeng UMB dan Pemkot Tangsel, Sekolah Janji Baik Kolaborasi Program Kesejahteraan Psikologis",
+    url: "https://faktabanten.co.id/tangerang/gandeng-umb-dan-pemkot-tangsel-sekolah-janji-baik-kolaborasi-program-kesejahteraan-psikologis/",
+    date: "2 Mei 2025",
+    description:
+      "Program ini terdiri dari dua sesi edukasi dan pendampingan yang dipandu oleh dosen psikologi UMB untuk guru, relawan, dan siswa Sekolah Janji Baik, yakni sesi pertama pada 16 Februari 2025 untuk...",
+  },
+  {
+    image: "/icons/jbonnews/news8.png",
+    title: "Peringati Suicide Prevention Month, Janji Baik Menyelenggarakan Tentang Pencegahan Bunuh Diri",
+    url: "https://www.kompasiana.com/dianariyanisurya21/66f7f74834777c21856c4412/peringati-suicide-prevention-month-janji-baik-menyelenggarakan-tentang-pencegahan-bunuh-diri",
+    date: "28 September 2024",
+    description:
+      "Dalam rangka memperingati World Suicide Prevention Month, Janji Baik mengadakan seminar pada 22 September 2024 di SDN 02 Perigi, Tangerang Selatan, dengan tema Jangan dibiarkan pentingnya...",
+  },
 ];
 
 function Berita() {
