@@ -1,14 +1,14 @@
 const testi = [
   {
-    nama: "Jasmine Indhira Aghivani",
+    nama: "Pandu Pangestu",
     role: "Relawan Janji Baik",
-    desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
-    profile: "/icons/testi1.png",
+    desc: "“Bagiku Janji Baik kini menjadi satu-satunya tempat untuk mempertanggungjawabkan keilmuan dan tempat memanen banyak kebaikan yang InsyaAllah kelak akan menjadi pemberat amal di akhirat💙”",
+    profile: "/icons/testi/PanduPangestu.png",
   },
   {
-    nama: "Danisa Arwanti",
+    nama: "Syaiful Bahri Ibnu Abdillah",
     role: "Relawan Janji Baik",
-    desc: "“Bersama Janji Baik, saya belajar bahwa membantu sesama bisa dimulai dari hal kecil. Senyuman anak-anak saat belajar adalah hadiah terbesar!”",
+    desc: "“Saya merasa sangat beruntung bisa menjadi bagian dari keluarga Janji Baik. Selain mendapatkan pengalaman berharga, ini juga menjadi bagian dari proses belajar saya untuk menjadi pribadi yang dapat bermanfaat bagi orang lain. Tidak ada hal lain yang saya harapkan selain melihat senyum bahagia para adik-adik siswa Janji Baik. Sukses terus untuk Janji Baik💙💙”",
     profile: "/icons/testi2.png",
   },
   {

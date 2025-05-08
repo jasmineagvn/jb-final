@@ -51,22 +51,32 @@ function Content() {
             />
             <div className="flex flex-wrap gap-4">
               <img
-                src="/icons/ulangtahun/gambar3.png"
+                src="/icons/ulangtahun/1.png"
                 alt=""
                 className="w-[565px]"
               />
               <img
-                src="/icons/ulangtahun/gambar3.png"
+                src="/icons/ulangtahun/2.png"
                 alt=""
                 className="w-[565px]"
               />
               <img
-                src="/icons/ulangtahun/gambar3.png"
+                src="/icons/ulangtahun/3.png"
                 alt=""
                 className="w-[565px]"
               />
               <img
-                src="/icons/ulangtahun/gambar3.png"
+                src="/icons/ulangtahun/4.png"
+                alt=""
+                className="w-[565px]"
+              />
+              <img
+                src="/icons/ulangtahun/5.png"
+                alt=""
+                className="w-[565px]"
+              />
+              <img
+                src="/icons/ulangtahun/6.png"
                 alt=""
                 className="w-[565px]"
               />

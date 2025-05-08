@@ -16,8 +16,6 @@ function TentangKami() {
       <Hero
         image="/icons/bg-tentangkami.png"
         title="Tentang Janji Baik"
-        // showLearnMoreButton={false}
-        // showContactUsButton={false}
         description="Tempat berkesempatan baik untuk menghubungkan kepedulian dengan aksi dalam  membangun pendidikan berkualitas. Janji Baik didirikan pada tahun 2020 atas inisiatif sekelompok anak muda di Tangerang Selatan yang peduli terhadap dunia pendidikan. "
       />
       <VisiMisi />

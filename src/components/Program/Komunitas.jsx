@@ -1,6 +1,6 @@
 const cardKomunitas = [
     {
-      img: "/icons/program/p18.png",
+      img: "/icons/program/p17.png",
       subtitle: "Komunitas Kerelawanan", 
       title: "Pesta Ide Relawan",
       desc: "Pesta Ide Relawan adalah kesempatan bagi relawan yang baru bergabung untuk saling mengenal, berbagi ide, dan merencanakan langkah-langkah selanjutnya dalam program sosial. Dalam acara ini, para relawan akan diperkenalkan dengan visi, misi, dan berbagai kegiatan yang akan dilakukan, sekaligus diberi ruang untuk menyampaikan ide-ide segar mereka. Pesta Ide Relawan bertujuan untuk mempererat ikatan antar relawan baru dan mendorong kolaborasi dalam mewujudkan perubahan positif.",

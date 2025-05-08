@@ -67,6 +67,14 @@ const beritaCard = [
     description:
       "Dalam rangka memperingati World Suicide Prevention Month, Janji Baik mengadakan seminar pada 22 September 2024 di SDN 02 Perigi, Tangerang Selatan, dengan tema Jangan dibiarkan pentingnya...",
   },
+  {
+    image: "/icons/jbonnews/news9.png",
+    title: "Janji Baik Kenalkan Relawan Difabel Inspiratif",
+    url: "https://banpos.co/2023/02/19/janji-baik-kenalkan-relawan-difabel-inspiratif/",
+    date: "21 Februari 2023",
+    description:
+      "Sekolah Janji Baik baru-baru ini kembali menunjukkan eksistensinya kepada masyarakat luas dengan membuktikan bahwa menjadi difabel bukanlah sebuah keterbatasan. Dalam laman Instagramnya, @janjibaik.id memperkenalkan...",
+  },
 ];
 
 function Berita() {

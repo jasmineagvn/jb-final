@@ -9,8 +9,6 @@ function KontakKami() {
       <Hero
         image="/icons/bg-kontakinformasi.png"
         title="Kontak Informasi "
-        showLearnMoreButton={false}
-        showContactUsButton={false}
         description="Janji Baik selalu siap merespons, baik untuk pertanyaan, masukan, atau sekadar sapaan. "
       />
       <Form />

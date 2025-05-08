@@ -1,49 +1,67 @@
-import React from "react";
+const syaratData = [
+  "Foto Siswa background warna merah ukuran 2x3 : 2 lembar",
+  "Foto Siswa background warna merah ukuran 3x4 : 2 lembar",
+  "Ijazah Terakhir (Asli) beserta fotokopi : 2 lembar",
+  "Fotokopi Akte kelahiran : 2 lembar",
+  "Fotokopi Kartu keluarga (KK) terbaru tanda tangan barcode : 2 lembar",
+  "Fotokopi Rapor sekolah kelas terakhir : 2 rangkap",
+  "Fotokopi KTP orang tua/wali : masing-masing 1 lembar",
+  "Surat keterangan tidak mampu dari Kelurahan : 1 lembar",
+  "Foto Rekening listrik bulan terakhir : 1 lembar",
+  "Foto Rumah (tampak depan, ruang keluarga dan dapur)",
+  "Untuk Siswa di luar Jabodetabek dan Banten, persyaratan berupa dokumen asli dapat dikirimkan melalui foto ke WA Admin Janji Baik",
+];
 
-export default function DaftarSiswa() {
+const DaftarSiswa = () => {
   return (
-    <div className="min-h-screen bg-white py-10 px-20 flex flex-col">
-      <div className="max-w-2xl">
-        <h1 className="text-3xl font-bold mb-4">
+    <div className="max-w-6xl mx-auto px-4 py-12">
+      {/* Header */}
+      <div className="mb-8">
+        <h2 className="text-[35px] sm:text-3xl font-bold mb-2">
           Ingin Menjadi Bagian dari Sekolah Janji Baik?
-        </h1>
-        <p className="text-gray-600">
-          Di Janji Baik kamu gak cuma bisa jadi siswa aja loh. Kamu bisa gabung ke OSIS ataupun organisasi lainnya. Yuk, siapkan langkahmu untuk masa depan yang lebih cerah! Sebelum mendaftar, pastikan kamu membaca syarat dan ketentuannya terlebih dahulu.
+        </h2>
+        <p className="text-[#72717B] text-[18px]">
+          Di Janji Baik kamu gak cuma bisa jadi siswa aja loh. Kamu bisa gabung ke OSIS ataupun organisasi lainnya.<br/>
+          Yuk, siapkan langkahmu untuk masa depan yang lebih cerah! Sebelum mendaftar, <br/> pastikan kamu membaca syarat dan ketentuannya terlebih dahulu.
         </p>
       </div>
 
-      <div className="bg-[#E7F6F7] p-8 mt-10 rounded-lg shadow-lg max-w-2xl w-full">
-        <h2 className="font-bold text-xl mb-4">Syarat & <br />Ketentuan</h2>
-        <hr className="border-t-4 border-black mb-4" />
-        <ul className="list-none space-y-4">
-          {[
-            "Foto Siswa background warna merah ukuran 2x3 : 2 lembar",
-            "Ijazah Terakhir (Asli) beserta fotokopi : 2 lembar",
-            "Fotokopi Akte kelahiran : 2 lembar",
-            "Fotokopi Kartu keluarga (KK) terbaru tanda tangan barcode : 2 lembar",
-            "Fotokopi Rapor sekolah kelas terakhir : 2 rangkap",
-            "Fotokopi KTP orang tua/wali : masing-masing 1 lembar",
-            "Surat keterangan tidak mampu dari Kelurahan : 1 lembar",
-            "Foto Rekening listrik bulan terakhir : 1 lembar",
-            "Foto Rumah (tampak depan, ruang keluarga dan dapur)",
-            "Untuk Siswa di luar Jabodetabek dan Banten, persyaratan berupa dokumen asli dapat dikirimkan melalui foto ke WA Admin Janji Baik"
-          ].map((item, index) => (
-            <li key={index} className="flex text-[#72717B] items-start gap-2">
-              <span className="text-orange-400">⭐</span>
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-        <div className="bg-[#01B4BB] p-8 rounded-[55px] mt-10 text-center max-w-2xl w-full">
-            <h2 className="text-white text-lg font-semibold mb-4">
-            Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga Baik? Yuk, Klik Daftar Sekarang!
-            </h2>
-            <button className="bg-orange-400 hover:bg-orange-500 text-white py-3 px-6 rounded-full transition">
-            <link rel="stylesheet" href="./daftarsiswa/formsiswa" />Daftar Siswa Sekarang
-            </button>
+      <div className="flex flex-col lg:flex-row gap-6 items-start">
+        <div className="bg-[#E7F6F7] rounded-xl p-6 shadow w-full lg:w-2/3">
+          <h3 className="text-lg font-bold mb-4">Syarat & <br/> Ketentuan</h3>
+          <div className="border-t-4 border-black w-full mb-4"></div>
+          <ul className="space-y-3">
+            {syaratData.map((item, index) => (
+              <li key={index} className="flex items-start text-gray-700">
+                <img
+                  src="/icons/check.png" // Ganti path ini dengan ikon kamu
+                  alt="icon"
+                  className="w-5 h-5 mt-1 mr-2"
+                />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
+        <div className="w-full lg:w-1/3">
+          <img
+            src="/icons/kartundaftarsiswa.png" // Ganti path ini dengan gambar anak kamu
+            alt="Anak-anak Janji Baik"
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+      <div className="mt-10 w-[900px] h-[230px] bg-[#01B4BB] rounded-[55px] text-white text-center py-12">
+        <p className="font-semibold text-[24px] mb-2">
+          Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga Baik?
+        </p>
+        <p className="mb-4 text-[24px] font-bold">Yuk, Klik Daftar Sekarang!</p>
+        <button className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-full">
+          Daftar Siswa Sekarang
+        </button>
+      </div>
     </div>
   );
-}
+};
+
+export default DaftarSiswa;

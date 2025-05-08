@@ -66,12 +66,12 @@ function Content() {
                 className="h-[385px]"
               />
               <img
-                src="/icons/KelasKreasi/gambar8.png"
+                src="/icons/KelasKreasi/gambar11.png"
                 alt=""
                 className="h-[385px]"
               />
               <img
-                src="/icons/KelasKreasi/gambar8.png"
+                src="/icons/KelasKreasi/gambar12.png"
                 alt=""
                 className="h-[385px]"
               />

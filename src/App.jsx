@@ -13,7 +13,8 @@ import KontakKami from "./pages/KontakKami";
 import DonasiBerkala from "./pages/DonasiBerkala";
 import DonasiUmum from "./pages/Donasiumum/scan";
 import Program from "./pages/Program";
-import TeamKami from "./pages/Team";
+import Team from "./pages/Team";
+import Kampanye from "./pages/Kampanye";
 
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
         <Route path="/donasiumum" element={<DonasiUmum />} />
         <Route path="/kontakkami" element={<KontakKami />} />
         <Route path="/program" element={<Program />} /> 
-        <Route path="/team" element={<TeamKami />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/kampanye" element={<Kampanye />} />
       </Routes>
     </>
   );
