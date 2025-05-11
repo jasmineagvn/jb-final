@@ -49,7 +49,7 @@ function ProgramPage() {
       />
 
       {/* Tab Navigation */}
-      <nav className="flex justify-center space-x-4  mt-10">
+      <nav className="flex flex-wrap gap-6 lg:gap-3 justify-center mt-10">
         {tabs.map((tab) => (
           <button
             key={tab.id}

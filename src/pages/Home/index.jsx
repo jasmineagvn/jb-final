@@ -23,6 +23,21 @@ function HomePage() {
             <a href="/kontakkami">Hubungi Kami</a>
           </button>
         </div>
+
+        <div className="hidden lg:flex bg-[#01B4BB] absolute bottom-[-70px] justify-center items-center py-6 px-6 rounded-3xl">
+          <div className="flex flex-col gap-5 items-center border-r-1 border-white w-[228px]">
+            <h1 className="text-[50px] font-semibold text-white">20 +</h1>
+            <p className="text-sm text-white/70">Anak Penerima Manfaat</p>
+          </div>
+          <div className="flex flex-col gap-5 items-center border-r-1 border-white w-[228px]">
+            <h1 className="text-[50px] font-semibold text-white">20 +</h1>
+            <p className="text-sm text-white/70">Kolaborasi Mitra yang Terjalin</p>
+          </div>
+          <div className="flex flex-col gap-5 items-center  w-[228px]">
+            <h1 className="text-[50px] font-semibold text-white">20 +</h1>
+            <p className="text-sm text-white/70">Kota di seluruh Indonesia</p>
+          </div>
+        </div>
       </Hero>
       <Misi />
       <EducationCards />

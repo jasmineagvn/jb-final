@@ -3,7 +3,7 @@ import React from 'react';
 const FormKolaborasi = () => {
   return (
     <div className="min-h-screen px-6 py-12 flex items-center justify-center">
-      <div className="w-full max-w-5xl bg-[#E7F6F7] p-10 md:p-14 lg:p-20 rounded-3xl shadow-xl">
+      <div className="w-full max-w-5xl bg-[#E7F6F7] p-5  md:p-14 lg:p-20 rounded-3xl shadow-xl">
         <h2 className="text-3xl font-bold text-center mb-2 text-gray-900">Form Berkolaborasi</h2>
         <p className="text-center text-sm text-gray-700 mb-10">
           Isi formulir di bawah ini, dan tim kami akan segera menghubungi Anda untuk membahas peluang<br /> kolaborasi lebih lanjut.
@@ -12,7 +12,7 @@ const FormKolaborasi = () => {
         <form className="space-y-6">
           <div>
             <label className="block mb-2 text-sm font-medium text-[#72717B]">
-              Alamat Email<span className="text-red-500">*</span>
+              Alamat Email <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -24,7 +24,7 @@ const FormKolaborasi = () => {
 
           <div>
             <label className="block mb-2 text-sm font-medium text-[#72717B]">
-              Nama Lengkap<span className="text-red-500">*</span>
+              Nama Lengkap <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -36,7 +36,7 @@ const FormKolaborasi = () => {
 
           <div>
             <label className="block mb-2 text-sm font-medium text-[#72717B]">
-              Nama Lembaga/Komunitas<span className="text-red-500">*</span>
+              Nama Lembaga/Komunitas <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -48,7 +48,7 @@ const FormKolaborasi = () => {
 
           <div>
             <label className="block mb-2 text-sm font-medium text-[#72717B]">
-              No. HP / WhatsApp<span className="text-red-500">*</span>
+              No. HP / WhatsApp <span className="text-red-500">*</span>
             </label>
             <input
               type="tel"
@@ -83,7 +83,7 @@ const FormKolaborasi = () => {
 
           <div>
             <label className="block mb-2 text-sm font-medium text-[#72717B]">
-              Pesan Tambahan/Pertanyaan<span className="text-red-500">*</span>
+              Pesan Tambahan/Pertanyaan <span className="text-red-500">*</span>
             </label>
             <textarea
               rows="4"

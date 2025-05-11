@@ -17,18 +17,24 @@ const DaftarSiswa = () => {
     <div className="max-w-6xl mx-auto px-4 py-12">
       {/* Header */}
       <div className="mb-8">
-        <h2 className="text-[35px] sm:text-3xl font-bold mb-2">
+        <h2 className="text-2xl lg:text-[35px] sm:text-3xl font-bold mb-2">
           Ingin Menjadi Bagian dari Sekolah Janji Baik?
         </h2>
-        <p className="text-[#72717B] text-[18px]">
-          Di Janji Baik kamu gak cuma bisa jadi siswa aja loh. Kamu bisa gabung ke OSIS ataupun organisasi lainnya.<br/>
-          Yuk, siapkan langkahmu untuk masa depan yang lebih cerah! Sebelum mendaftar, <br/> pastikan kamu membaca syarat dan ketentuannya terlebih dahulu.
+        <p className="text-[#72717B] text-base lg:text-[18px] mt-4">
+          Di Janji Baik kamu gak cuma bisa jadi siswa aja loh. Kamu bisa gabung
+          ke OSIS ataupun organisasi lainnya.
+          <br />
+          Yuk, siapkan langkahmu untuk masa depan yang lebih cerah! Sebelum
+          mendaftar, <br /> pastikan kamu membaca syarat dan ketentuannya
+          terlebih dahulu.
         </p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 items-start">
         <div className="bg-[#E7F6F7] rounded-xl p-6 shadow w-full lg:w-2/3">
-          <h3 className="text-lg font-bold mb-4">Syarat & <br/> Ketentuan</h3>
+          <h3 className="text-lg font-bold mb-4">
+            Syarat & <br /> Ketentuan
+          </h3>
           <div className="border-t-4 border-black w-full mb-4"></div>
           <ul className="space-y-3">
             {syaratData.map((item, index) => (
@@ -51,14 +57,19 @@ const DaftarSiswa = () => {
           />
         </div>
       </div>
-      <div className="mt-10 w-[900px] h-[230px] bg-[#01B4BB] rounded-[55px] text-white text-center py-12">
-        <p className="font-semibold text-[24px] mb-2">
-          Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga Baik?
-        </p>
-        <p className="mb-4 text-[24px] font-bold">Yuk, Klik Daftar Sekarang!</p>
-        <button className="bg-orange-400 hover:bg-orange-500 text-white px-6 py-2 rounded-full">
-          Daftar Siswa Sekarang
-        </button>
+      <div className="flex justify-center">
+        <div className="mt-10 w-full lg:w-[900px] h-full lg:h-[230px] bg-[#01B4BB] rounded-[55px] text-white text-center py-12">
+          <p className="font-semibold text-lg lg:text-[24px] mb-2 px-3">
+            Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga
+            Baik?
+          </p>
+          <p className="mb-4 text-base lg:text-[24px] font-bold">
+            Yuk, Klik Daftar Sekarang!
+          </p>
+          <button className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-full">
+            Daftar Siswa Sekarang
+          </button>
+        </div>
       </div>
     </div>
   );

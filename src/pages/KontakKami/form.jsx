@@ -1,8 +1,8 @@
 const ContactForm = () => {
   return (
-    <div className="bg-[#eaf9fa] rounded-2xl p-8 shadow-lg mb-20 max-w-6xl mx-auto mt-20">
+    <div className="bg-[#eaf9fa] rounded-2xl p-8 shadow-lg mb-20 max-w-6xl mx-4 lg:mx-auto mt-20 ">
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="flex-1 flex flex-col gap-6 w-1/2 pr-4">
+        <div className="flex-1 flex flex-col gap-6 w-full lg:w-1/2 pr-4">
           <ContactItem
             icon="/icons/kontak kami/call.png"
             title="No. HP (Admin)"
@@ -19,8 +19,8 @@ const ContactForm = () => {
             text="Alesha House, Vanya Park, Tangerang Regency, Banten"
           />
         </div>
-        <div className="hidden md:block w-px bg-[#72717B]"></div>
-        <div className="flex-1 w-1/2 pl-4">
+        <div className="hidden md:block bg-[#72717B]"></div>
+        <div className="flex-1 w-full lg:w-1/2 pl-0 lg:pl-4">
           <h2 className="text-2xl font-bold mb-1">Kirim Pesan</h2>
           <p className="text-gray-600 text-sm mb-6">
             Silahkan isi formulir dibawah ini, dan kami akan segera menghubungi
@@ -60,7 +60,7 @@ const ContactForm = () => {
 };
 
 const ContactItem = ({ icon, title, text }) => (
-  <div className="bg-white w-[400px] rounded-xl p-4 shadow-lg flex items-start gap-4">
+  <div className="bg-white w-full lg:w-[400px] rounded-xl p-4 shadow-lg flex items-start gap-4">
     <img src={icon} alt={title} className="w-6 h-6 mt-1" />
     <div>
       <h4 className="font-semibold text-[#72717B]">{title}</h4>

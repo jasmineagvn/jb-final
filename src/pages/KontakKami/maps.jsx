@@ -1,6 +1,6 @@
 const maps = () => {
   return (
-    <section className="py-12 bg-white text-center">
+    <section className="py-12 bg-white text-center px-5 lg:px-0">
       <h2 class="text-4xl font-bold text-gray-900 mb-4">
         Temukan Kami Di Google Maps
       </h2>

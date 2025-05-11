@@ -37,17 +37,17 @@ const ProgramUnggulan = () => {
           className="w-[620px] hidden md:flex"
         />
 
-        <div className="md:absolute flex flex-wrap justify-center w-full md:w-[800px] h-[500px] top-10 md:-top-10 gap-7">
+        <div className="md:absolute flex flex-wrap justify-center w-full lg:w-[800px] lg:h-[500px] top-10 md:-top-10 gap-7">
           {programCard.map((program, index) => (
             <div
               key={index}
-              className=" bg-white dark:bg-[#3C3F41] shadow-lg flex flex-col rounded-xl mx-5 md:mx-0 px-4 justify-center gap-2 w-[341px] h-[230px]"
+              className=" bg-white shadow-lg flex flex-col rounded-xl mx-5 md:mx-0 px-4 py-6 lg:py-0 justify-center gap-2 lg:w-[341px] lg:h-[230px] w-full h-full"
             >
               <img src={program.icon} alt="" width={40} height={40} />
-              <h3 className="text-xl text-black dark:text-white font-bold mb-2">
+              <h3 className="text-xl text-black  font-bold mb-2">
                 {program.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">{program.description}</p>
+              <p className="text-gray-600 text-sm">{program.description}</p>
             </div>
           ))}
         </div>

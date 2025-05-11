@@ -1,10 +1,10 @@
-import scan from
+import DonasiUmum from "./scan";
 
 
 function DonasiBerkala() {
   return (
     <>
-      <Scan />
+      <DonasiUmum />
     </>
   );
 }

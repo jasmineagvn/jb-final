@@ -2,19 +2,19 @@ import Button from "@/components/Button";
 
 function Misi() {
   return (
-    <div className="max-w-6xl mx-auto mt-[150px]">
+    <div className="max-w-6xl mx-auto mt-[90px] lg:mt-[150px]">
       <div className="flex justify-between items-center px-4 md:px-0">
         <div className="flex flex-col gap-y-8 w-full md:w-[50%]">
           <header className="flex flex-col gap-y-2 w-full md:w-[550px]">
             <p className="text-teal-500 font-bold tracking-[-0.7px]">
               Tentang Sekolah Janji Baik
             </p>
-            <h1 className="text-black dark:text-white text-4xl font-semibold  tracking-[-0.7px] leading-tight">
+            <h1 className="text-black dark:text-white text-3xl lg:text-4xl font-semibold  tracking-[-0.7px] leading-tight">
               Pendidikan untuk Semua, Masa Depan yang Lebih Baik
             </h1>
           </header>
 
-          <p className="text-[#72717B] dark:text-gray-400 w-full md:w-[496px]  leading-relaxed tracking-[-0.7px]">
+          <p className="text-[#72717B] text-sm lg:text-base dark:text-gray-400 w-full md:w-[496px] leading-relaxed tracking-[-0.7px]">
             Sekolah Janji Baik adalah sekolah non-profit yang menyediakan
             pendidikan gratis bagi anak-anak kurang mampu di Indonesia. Berdiri
             sejak 2020, kami hadir untuk menjembatani kesenjangan pendidikan dan
@@ -22,7 +22,7 @@ function Misi() {
           </p>
 
           <div className="flex flex-col gap-y-8">
-            <h1 className="text-black dark:text-white text-3xl font-medium">Misi Kami</h1>
+            <h1 className="text-black dark:text-white text-3xl lg:text-4xl font-medium">Misi Kami</h1>
 
             <div className="flex flex-col gap-y-4">
               <MisiList>
@@ -43,7 +43,7 @@ function Misi() {
             </div>
           </div>
 
-          <Button variant="md:w-[510px] w-full">Pelajari lebih lanjut</Button>
+          <Button variant="lg:w-[510px] w-full">Pelajari lebih lanjut</Button>
         </div>
 
         <img src="/icons/program/Volunteer.png" alt="" className="w-[500px] hidden md:flex" />
@@ -55,8 +55,8 @@ function Misi() {
 const MisiList = ({ children }) => {
   return (
     <div className="flex gap-x-4 items-center">
-      <img src="./icons/checklist.svg" alt="icon" />
-      <p className="text-[#72717B] dark:text-gray-400 leading-relaxed tracking-[-0.7px]">
+      <img src="./icons/checklist.svg" alt="icon" className="w-4 h-4 lg:w-5 lg:h-5" />
+      <p className="text-[#72717B] text-sm lg:text-base dark:text-gray-400 leading-relaxed tracking-[-0.7px]">
         {children}
       </p>
     </div>

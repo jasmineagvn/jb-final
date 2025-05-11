@@ -36,7 +36,7 @@ export default function Konseling() {
             Program Pengembangan
           </span>
           <h1 className="text-2xl font-bold">Layanan Konseling Janji Baik</h1>
-          <p className="text-[#72717B] mt-4">
+          <p className="text-sm lg:text-base text-[#72717B] mt-4">
             Pelayanan konseling terpadu yang dilakukan oleh konselor untuk
             meningkatkan aspek akademis maupun aspek psikologis peserta didik
             maupun orang tua-nya masing-masing.
@@ -50,11 +50,11 @@ export default function Konseling() {
           <div className="flex flex-col gap-4">
             <div className="flex gap-3 items-center">
               <img src="/icons/checklist.svg" alt="" className="w-5 h-5" />
-              <p className="text-base text-[#EC901D]">
+              <p className="text-sm lg:text-base text-[#EC901D]">
                 Parenting untuk Orang Tua Peserta Didik
               </p>
             </div>
-            <h1 className="text-base text-[#72717B]">
+            <h1 className="text-sm lg:text-base text-[#72717B]">
               {" "}
               Kegiatan menghadirkan Narasumber dalam memberikan pelatihan,
               bimbingan dan konsultasi bagi para Orang Tua.
@@ -63,11 +63,11 @@ export default function Konseling() {
           <div className="flex flex-col gap-4">
             <div className="flex gap-3 items-center">
               <img src="/icons/checklist.svg" alt="" className="w-5 h-5" />
-              <p className="text-base text-[#EC901D]">
+              <p className="text-sm lg:text-base text-[#EC901D]">
                 Kunjungan ke Rumah (Home Visit)
               </p>
             </div>
-            <h1 className="text-base text-[#72717B]">
+            <h1 className="text-sm lg:text-base text-[#72717B]">
               {" "}
               Kegiatan yang dilakukan pihak sekolah agar mengetahui latar
               belakang peserta didik dan meningkatkan pembelajaran campuran

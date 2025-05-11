@@ -1,15 +1,7 @@
-import { useTheme } from "@/components/themeprovider";
-import { Sun, Moon, MonitorSmartphone } from "lucide-react";
 import { Link } from "react-router";
 
 function DesktopNavbar() {
-  const { theme, setTheme } = useTheme();
-  const themes = ["light", "dark"];
 
-  const handleThemeChange = () => {
-    const newTheme = themes[(themes.indexOf(theme) + 1) % themes.length];
-    setTheme(newTheme);
-  };
 
   return (
     <div className="hidden md:flex">
@@ -189,7 +181,7 @@ function DesktopNavbar() {
             Kontak Kami
           </a>
         </li>
-        <button onClick={handleThemeChange}>
+        {/* <button onClick={handleThemeChange}>
           {theme === "dark" && (
             <h1>
               <Moon></Moon>
@@ -205,7 +197,7 @@ function DesktopNavbar() {
               <MonitorSmartphone></MonitorSmartphone>
             </h1>
           )}
-        </button>
+        </button> */}
       </ul>
     </div>
   );

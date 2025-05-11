@@ -4,7 +4,7 @@ export default function Undang() {
       <span className="text-sm text-[#01B4BB] font-medium mb-1">
         Undang-Undang
       </span>
-      <h1 className="max-w-2xl mx-auto text-[#72717B] text-sm md:text-base mb-10">
+      <h1 className="max-w-2xl mx-auto text-[#72717B] text-sm lg:text-base mb-10">
         Undang-undang No. 20 Tahun 2003 tentang Sistem Pendidikan Nasional
         (SISDIKNAS) mengakomodasi Pendidikan Non Formal (di bawah Payung PKBM)
         memperoleh ijazah kesetaraan yang dikeluarkan oleh KEMENDIKBUDRISTEK.

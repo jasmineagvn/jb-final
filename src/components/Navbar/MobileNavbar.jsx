@@ -22,38 +22,10 @@ import {
 } from "@/components/ui/menubar";
 
 function MobileNavbar() {
-  const { theme, setTheme } = useTheme();
-  const themes = ["light", "dark"];
-
-  const handleThemeChange = () => {
-    const newTheme = themes[(themes.indexOf(theme) + 1) % themes.length];
-    setTheme(newTheme);
-  };
-
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = (e) => {
-    e.preventDefault(); // Prevent any unintended link actions
-    setIsDropdownOpen((prev) => !prev);
-  };
 
   return (
     <div className="flex md:hidden">
-      <button onClick={handleThemeChange}>
-        {theme === "dark" && (
-          <h1>
-            <Moon />
-          </h1>
-        )}
-        {theme === "light" && (
-          <h1>
-            <Sun />
-          </h1>
-        )}
-      </button>
-
-      <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
+      <Sheet>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon">
             <MenuIcon className="h-5 w-5" />
@@ -106,13 +78,13 @@ function MobileNavbar() {
                 </MenubarTrigger>
                 <MenubarContent>
                   <MenubarItem>
-                    <Link to="/tentangkami">Daftar Siswa</Link>
+                    <Link to="/daftarsiswa">Daftar Siswa</Link>
                   </MenubarItem>
                   <MenubarItem>
-                    <Link to="/jbonnews">Daftar Relawan</Link>
+                    <Link to="/daftarrelawan">Daftar Relawan</Link>
                   </MenubarItem>
                   <MenubarItem>
-                    <Link to="/divisikami">Berkolaborasi</Link>
+                    <Link to="/daftarkolaborasi">Berkolaborasi</Link>
                   </MenubarItem>
                 </MenubarContent>
               </MenubarMenu>
@@ -123,7 +95,7 @@ function MobileNavbar() {
               className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/">
+              <Link to="/program">
                 Program
               </Link>
             </Button>
@@ -137,13 +109,13 @@ function MobileNavbar() {
                 </MenubarTrigger>
                 <MenubarContent>
                   <MenubarItem>
-                    <Link to="/tentangkami">Berkala Baik</Link>
+                    <Link to="/donasiberkala">Berkala Baik</Link>
                   </MenubarItem>
                   <MenubarItem>
-                    <Link to="/jbonnews">Donasi Umum</Link>
+                    <Link to="/donasiumum">Donasi Umum</Link>
                   </MenubarItem>
                   <MenubarItem>
-                    <Link to="/divisikami">Kampanye</Link>
+                    <Link to="/kampanye">Kampanye</Link>
                   </MenubarItem>
                 </MenubarContent>
               </MenubarMenu>
@@ -154,7 +126,7 @@ function MobileNavbar() {
               className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/">
+              <Link to="/kontakkami">
                 Kontak Kami
               </Link>
             </Button>

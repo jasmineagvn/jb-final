@@ -1,5 +1,3 @@
-import Button from "../../components/Button";
-
 const Divisi = () => {
   const program = [
     {
@@ -47,7 +45,7 @@ const Divisi = () => {
               <h3 className="text-xl text-black dark:text-white font-bold mb-2">
                 {program.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
+              <p className="text-gray-600 text-sm">
                 {program.description}
               </p>
             </div>
@@ -62,13 +60,13 @@ const Divisi = () => {
         <h1 className="text-[24px] font-semibold tracking-[-0.7px] leading-snug">
           Membangun Kebaikan, Bersama dalam Setiap Divisi
         </h1>
-        <p className="text-sm text-[#72717B] dark:text-gray-300">
+        <p className="text-sm text-[#72717B]">
           Di Janji Baik, setiap divisi memiliki peran penting dalam mewujudkan
           misi kami. Dengan kolaborasi tim yang solid, kami berupaya
           menghadirkan program terbaik, memastikan setiap inisiatif berjalan
           optimal, dan menciptakan dampak positif bagi mereka yang membutuhkan.
         </p>
-        <Button><a href="/divisikami">Pelajari lebih lanjut</a></Button>
+        <a href="/divisikami">Pelajari lebih lanjut</a>
       </div>
     </section>
   );

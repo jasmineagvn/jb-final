@@ -41,10 +41,10 @@ const campaigns = [
 const CampaignList = () => {
   return (
     <div className="py-16 px-4 max-w-6xl mx-auto">
-      <h2 className="text-[50px] font-bold text-center mb-4">
+      <h2 className="text-4xl lg:text-[50px] font-bold text-center mb-4 leading-tight">
         Kampanye Janji Baik
       </h2>
-      <p className="text-center text-[16px] text-gray-600 w-[844px] mx-auto mb-20">
+      <p className="text-center text-sm lg:text-base text-gray-600 w-full lg:w-[844px] mx-auto mb-20">
         Janji Baik adalah gerakan untuk menciptakan masa depan yang lebih adil
         dan penuh harapan bagi anak-anak Indonesia. Melalui program pendidikan
         inklusif, ruang belajar yang aman dan suportif, serta perhatian pada
@@ -60,7 +60,7 @@ const CampaignList = () => {
         {campaigns.map((item, index) => (
           <div
             key={index}
-            className="flex bg-white shadow-jb gap-14 w-full p-6 rounded-2xl"
+            className="flex lg:flex-row flex-col bg-white shadow-jb gap-14 w-full p-6 rounded-2xl"
           >
             <img src={item.image} alt="" />
             <div className="p-4 flex-1">
@@ -87,7 +87,7 @@ const CampaignList = () => {
       </div>
 
       <div className="mt-12 text-center">
-        <button className="bg-orange-400 hover:bg-orange-500 text-white w-[400px] h-[65px] px-6 py-2 rounded-full font-semibold transition">
+        <button className="bg-orange-400 hover:bg-orange-500 text-white w-full lg:w-[400px] h-[65px] px-6 py-2 rounded-full font-semibold transition">
           Buat Aksi Baik Kamu Yuk!
         </button>
       </div>

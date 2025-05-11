@@ -45,15 +45,15 @@ const testi = [
 
 const Testimoni = () => {
   return (
-    <div className="mt-[250px] md:mt-28">
+    <div className="mt-[190px] lg:mt-28">
       <div className="text-center mb-12 px-6">
-        <p className="text-[#01B4BB] font-semibold">
+        <p className="text-[#01B4BB] text-sm font-semibold">
           Testimoni & Kisah Inspiratif
         </p>
-        <h2 className="text-3xl font-semibold mt-2 mb-4">
+        <h2 className="text-2xl lg:text-3xl font-semibold mt-2 mb-4">
           Cerita Perubahan dari Mereka yang Telah Terbantu
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <p className="text-gray-600 text-sm lg:text-base dark:text-gray-400 max-w-2xl mx-auto">
           Setiap anak yang belajar di Sekolah Janji Baik memiliki cerita
           perjuangan yang unik. Dari keterbatasan hingga menemukan harapan baru,
           mereka membuktikan bahwa pendidikan bisa mengubah masa depan.
