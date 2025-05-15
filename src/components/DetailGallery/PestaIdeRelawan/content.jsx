@@ -38,7 +38,7 @@ function Content() {
               className="w-full md:w-[565px]"
             />
             <img
-              src="/icons/PestaIdeRelawan/gambar5.png"
+              src="/icons/PestaIdeRelawan/gambar10.png"
               alt=""
               className="w-full md:w-[565px]"
             />
@@ -47,12 +47,8 @@ function Content() {
           <div className="flex flex-col md:flex-row justify-between gap-4">
             <div className="flex flex-col w-full md:w-[565px] gap-4">
               <img src="/icons/PestaIdeRelawan/gambar7.png" alt="" />
-              <img src="/icons/PestaIdeRelawan/gambar8.png" alt="" />
-              <img src="/icons/PestaIdeRelawan/gambar8.png" alt="" />
             </div>
             <div className="flex flex-col w-full md:w-[565px] gap-4">
-              <img src="/icons/PestaIdeRelawan/gambar9.png" alt="" />
-              <img src="/icons/PestaIdeRelawan/gambar10.png" alt="" />
               <img src="/icons/PestaIdeRelawan/gambar11.png" alt="" />
             </div>
           </div>

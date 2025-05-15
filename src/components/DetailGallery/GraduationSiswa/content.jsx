@@ -22,33 +22,30 @@ function Content() {
         <div className="mt-12 flex flex-col gap-4 px-5 md:px-0">
           <img src="/icons/GraduationSiswa/gambar1.png" alt="" />
           <div className="flex flex-wrap justify-between gap-4">
-            <img
-              src="/icons/GraduationSiswa/gambar2.png"
-              alt=""
-              className="w-[565px]"
-            />
-            <img
-              src="/icons/GraduationSiswa/gambar3.png"
-              alt=""
-              className="w-[565px]"
-            />
-            <img
-              src="/icons/GraduationSiswa/gambar4.png"
-              alt=""
-              className="w-[565px]"
-            />
-            <img
-              src="/icons/GraduationSiswa/gambar5.png"
-              alt=""
-              className="w-[565px]"
-            />
-          </div>
-          <div className="flex flex-wrap justify-between gap-4">
             <img src="/icons/GraduationSiswa/gambar6.png" alt="" className="w-[565px]" />
-            <div className="w-[565px] flex flex-wrap gap-4">
-              <img src="/icons/GraduationSiswa/gambar7.png" alt="" className="h-[341px]" />
-              <img src="/icons/GraduationSiswa/gambar7.png" alt="" className="h-[341px]" />
-              <img src="/icons/GraduationSiswa/gambar7.png" alt="" className="h-[341px]" />
+            <div className="flex flex-wrap w-[565px] gap-4">
+              <img
+                src="/icons/GraduationSiswa/gambar3.png"
+                alt=""
+                className="h-[385px]"
+              />
+              <img
+                src="/icons/GraduationSiswa/gambar5.png"
+                alt=""
+                className="h-[385px]"
+              />
+              <img
+                src="/icons/GraduationSiswa/gambar2.png"
+                alt=""
+                className="h-[385px]"
+              />
+            </div>
+            <div className="flex flex-wrap justify-between gap-4">
+              <img
+                src="/icons/GraduationSiswa/gambar4.png"
+                alt=""
+                className="w-[565px]"
+              />
             </div>
           </div>
         </div>

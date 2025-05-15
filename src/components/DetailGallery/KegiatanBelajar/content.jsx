@@ -20,30 +20,33 @@ function Content() {
         </h1>
 
         <div className="mt-12 flex flex-col gap-4 px-5 md:px-0">
-          <img src="/icons/kegiatanbelajar/gambar1.png" alt="" />
           <div className="flex flex-wrap justify-between gap-4">
             <img
-              src="/icons/kegiatanbelajar/1.png"
+              src="/icons/kegiatanbelajar/kbm1.png"
               alt=""
               className="w-[565px]"
             />
             <img
-              src="/icons/kegiatanbelajar/2.png"
+              src="/icons/kegiatanbelajar/kbm2.png"
               alt=""
               className="w-[565px]"
             />
             <img
-              src="/icons/kegiatanbelajar/3.png"
+              src="/icons/kegiatanbelajar/kbm3.png"
               alt=""
               className="w-[565px]"
             />
             <img
-              src="/icons/kegiatanbelajar/4.png"
+              src="/icons/kegiatanbelajar/kbm4.png"
+              alt=""
+              className="w-[565px]"
+            />
+             <img
+              src="/icons/kegiatanbelajar/kbm5.png"
               alt=""
               className="w-[565px]"
             />
           </div>
-          <img src="/icons/kegiatanbelajar/5.png" alt="" />
         </div>
 
         <div className="mt-16 mx-8 md:mx-0 bg-[#EC901D] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer ">

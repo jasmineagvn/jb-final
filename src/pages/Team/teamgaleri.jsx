@@ -92,7 +92,7 @@ const TeamGaleri = () => {
         {TeamMembers.map((member, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg overflow-hidden text-center p-4"
+            className="bg-white shadow-lg overflow-hidden text-center p-4 transform duration-300 hover:scale-105 hover:shadow-xl hover:bg-[rgba(69,179,157,0.2)]"
           >
             <img
               src={`${member.image}`}

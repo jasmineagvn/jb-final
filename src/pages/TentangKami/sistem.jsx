@@ -9,7 +9,7 @@ const Sistem = () => {
 
         <div className="max-w-6xl mx-auto flex flex-col-3 gap-24 mt-12 mb-8">
             <div className="flex flex-wrap w-full">
-                <img src="./public/icons/fotosistem.png" className="max-w-full h-auto object-contain" />
+                <img src="./public/icons/kurikulum.png" className="max-w-full h-auto object-contain" />
             </div>
         </div>
       </section>

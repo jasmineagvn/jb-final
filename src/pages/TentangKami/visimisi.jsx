@@ -12,7 +12,7 @@ function VisiMisi() {
         {/* Gambar visimisi */}
         <div className="w-full md:w-[500px] px-5 md:px-0">
           <img
-            src="/icons/visimisi.png"
+            src="/icons/visimisitk.png"
             alt=""
             className="w-full rounded-[40px]"
           />

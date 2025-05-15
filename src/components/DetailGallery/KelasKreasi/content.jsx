@@ -77,10 +77,29 @@ function Content() {
               />
             </div>
             <img
-              src="/icons/KelasKreasi/gambar9.png"
+                src="/icons/KelasKreasi/gambar9.png"
+                alt=""
+                className="w-[565px]"
+              />
+          </div>
+          <div className="flex flex-wrap justify-between gap-4">
+            <img
+              src="/icons/KelasKreasi/gambar13.png"
               alt=""
               className="w-[565px]"
             />
+            <img
+              src="/icons/KelasKreasi/gambar14.png"
+              alt=""
+              className="w-[565px]"
+            />
+          </div>
+          <div className="flex flex-wrap justify-between gap-4">
+            <img
+                src="/icons/KelasKreasi/gambar15.png"
+                alt=""
+                className="w-[565px]"
+              />
           </div>
         </div>
 

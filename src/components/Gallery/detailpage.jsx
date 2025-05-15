@@ -5,6 +5,7 @@ import GraduationSiswa from "../DetailGallery/GraduationSiswa";
 import KelasKreasi from "../DetailGallery/KelasKreasi";
 import PeringatanHariNasional from "../DetailGallery/PeringatanNasional";
 import KegiatanBelajar from "../DetailGallery/KegiatanBelajar";
+import PKM from "../DetailGallery/PKM";
 
 function DetailPage() {
   const { id } = useParams();
@@ -22,9 +23,10 @@ function DetailPage() {
         return <GraduationSiswa />;
       case 5:
         return <KelasKreasi />;
-
       case 6:
         return <PeringatanHariNasional />;
+      case 7:
+        return <PKM />;
       default:
         return (
           <div className="flex flex-col items-center justify-center min-h-screen">

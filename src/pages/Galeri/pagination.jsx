@@ -44,18 +44,28 @@ function Pagination() {
     },
     {
       id: 8,
-      title: "Kebaikan 7",
-      image: "/icons/galerikebaikan/kebaikan1.png",
+      title: "..",
+      image: "/icons/galerikebaikan/kosong.png",
     },
     {
       id: 9,
-      title: "Kebaikan 8",
-      image: "/icons/galerikebaikan/kebaikan1.png",
+      title: "..",
+      image: "/icons/galerikebaikan/kosong.png",
     },
     {
       id: 10,
-      title: "Kebaikan 9",
-      image: "/icons/galerikebaikan/kebaikan1.png",
+      title: "..",
+      image: "/icons/galerikebaikan/kosong.png",
+    },
+    {
+      id: 11,
+      title: "..",
+      image: "/icons/galerikebaikan/kosong.png",
+    },
+    {
+      id: 12,
+      title: "..",
+      image: "/icons/galerikebaikan/kosong.png",
     },
   ];
 

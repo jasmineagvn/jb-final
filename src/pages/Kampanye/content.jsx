@@ -5,8 +5,6 @@ const campaigns = [
     title: "Pendidikan untuk Anak Hebat Sekolah Janji Baik",
     collected: 3000000,
     target: 5000000,
-    description:
-      "Setiap anak berhak atas masa depan yang dimulai dari ruang kelas. Lewat Janji untuk Pendidikan, kamu bisa bantu mereka tetap belajar, tumbuh, dan bermimpi—tanpa terhenti karena seragam yang sobek, buku yang tak ada, atau perut yang lapar. Donasimu, sekecil apa pun, adalah janji yang menguatkan langkah mereka setiap hari. Karena masa depan tak dibangun dari hal besar, tapi dari komitmen kecil yang setia.",
   },
   {
     image: "/icons/kampanye/kampanye2.png",
@@ -14,8 +12,6 @@ const campaigns = [
     title: "Harapan yang Lulus Bersama Waktu – Wisuda di Sekolah Janji Baik",
     collected: 4000000,
     target: 5000000,
-    description:
-      "Setiap anak layak merayakan kelulusannya dengan bahagia. Lewat program ini, kita bantu hadirkan toga kecil, bingkisan sederhana, dan senyum besar di hari wisuda anak-anak Sekolah Janji Baik. Dukung mereka melangkah dengan bangga menuju masa depan.",
   },
   {
     image: "/icons/kampanye/kampanye3.png",
@@ -23,8 +19,6 @@ const campaigns = [
     title: "Satu Hari untuk Negeri – Perayaan 17 Agustus di Sekolah Janji Baik",
     collected: 2000000,
     target: 5000000,
-    description:
-      "Dalam rangka menyambut Hari Kemerdekaan Republik Indonesia ke-79, Janji Baik mengadakan program spesial bertajuk Semarak Merdeka di Sekolah Janji Baik — sebuah inisiatif sederhana namun penuh makna untuk merayakan kemerdekaan bersama anak-anak di sekolah binaan kami..",
   },
   {
     image: "/icons/kampanye/kampanye3.png",
@@ -33,8 +27,6 @@ const campaigns = [
       "Bekal Belajar untuk Anak Negeri – Donasi Alat Tulis untuk Sekolah Janji Baik",
     collected: 500000,
     target: 5000000,
-    description:
-      "Dalam rangka menyambut tahun ajaran baru, Janji Baik mengadakan program berbagi alat tulis untuk anak-anak binaan kami di Sekolah Janji Baik. Kampanye ini bertajuk “Satu Hari untuk Masa Depan” karena kami percaya bahwa dengan dukungan sederhana berupa pensil, buku tulis, dan alat tulis lainnya, anak-anak dapat menulis cerita baru menuju masa depan yang lebih baik. Yuk, bantu kami lengkapi kebutuhan belajar mereka!",
   },
 ];
 
@@ -80,16 +72,26 @@ const CampaignList = () => {
                 Terkumpul <strong>Rp{item.collected.toLocaleString()}</strong> dari{" "}
                 <strong>Rp{item.target.toLocaleString()}</strong>
               </div>
-              <p className="text-sm text-gray-600">{item.description}</p>
+              <button className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-full w-[240px] h-[39px] mt-8">
+              Lihat Detail Kampanye
+            </button>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-12 text-center">
-        <button className="bg-orange-400 hover:bg-orange-500 text-white w-full lg:w-[400px] h-[65px] px-6 py-2 rounded-full font-semibold transition">
-          Buat Aksi Baik Kamu Yuk!
-        </button>
+      <div className="flex justify-center">
+        <div className="mt-20 w-[881px] h-[260px] bg-[#01B4BB] rounded-[55px] text-white text-center py-12">
+          <p className="font-semibold text-lg lg:text-[24px] mb-2 px-3">
+          Kami sudah melangkah lebih dulu. Sekarang giliranmu!
+          </p>
+          <p className="mb-4 text-base lg:text-[24px] font-bold">
+          Apa aksi baikmu yang akan kamu mulai hari ini?
+          </p>
+          <button className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-[55px] w-[400px] h-[65px] mt-4">
+            Buat Aksi Baik Kamu, Yuk!
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -27,28 +27,13 @@ function Content() {
               alt=""
               className="w-[565px]"
             />
-            <div className="flex flex-wrap w-[565px] gap-4">
+            <div className="flex flex-wrap justify-between gap-4">
               <img
-                src="/icons/ulangtahun/gambar3.png"
+                src="/icons/ulangtahun/gambar7.png"
                 alt=""
-                className="h-[341px]"
-              />
-              <img
-                src="/icons/ulangtahun/gambar3.png"
-                alt=""
-                className="h-[341px]"
-              />
-              <img
-                src="/icons/ulangtahun/gambar3.png"
-                alt=""
-                className="h-[341px]"
+                className="w-[565px]"
               />
             </div>
-            <img
-              src="/icons/ulangtahun/gambar3.png"
-              alt=""
-              className="h-[341px] w-full"
-            />
             <div className="flex flex-wrap gap-4">
               <img
                 src="/icons/ulangtahun/1.png"

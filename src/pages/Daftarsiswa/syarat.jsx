@@ -15,7 +15,6 @@ const syaratData = [
 const DaftarSiswa = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Header */}
       <div className="mb-8">
         <h2 className="text-2xl lg:text-[35px] sm:text-3xl font-bold mb-2">
           Ingin Menjadi Bagian dari Sekolah Janji Baik?
@@ -31,16 +30,16 @@ const DaftarSiswa = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 items-start">
-        <div className="bg-[#E7F6F7] rounded-xl p-6 shadow w-full lg:w-2/3">
+        <div className="bg-[#E7F6F7] rounded-xl p-6 shadow-xl w-[757px] h-[780px]">
           <h3 className="text-lg font-bold mb-4">
             Syarat & <br /> Ketentuan
           </h3>
-          <div className="border-t-4 border-black w-full mb-4"></div>
+          <div className="border-t-4 border-black w-full mb-4n"></div>
           <ul className="space-y-3">
             {syaratData.map((item, index) => (
-              <li key={index} className="flex items-start text-gray-700">
+              <li key={index} className="flex items-start text-gray-700 p-2 mt-4">
                 <img
-                  src="/icons/check.png" // Ganti path ini dengan ikon kamu
+                  src="/icons/check.png"
                   alt="icon"
                   className="w-5 h-5 mt-1 mr-2"
                 />
@@ -51,7 +50,7 @@ const DaftarSiswa = () => {
         </div>
         <div className="w-full lg:w-1/3">
           <img
-            src="/icons/kartundaftarsiswa.png" // Ganti path ini dengan gambar anak kamu
+            src="/icons/kartundaftarsiswa.png"
             alt="Anak-anak Janji Baik"
             className="w-full h-auto"
           />
