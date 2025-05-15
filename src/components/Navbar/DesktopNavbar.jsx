@@ -8,7 +8,7 @@ function DesktopNavbar() {
       <ul className="flex gap-10 items-center">
         <li>
           <Link to="/" className="text-gray-500 dark:text-white">
-            Berandaa
+            Beranda
           </Link>
         </li>
 
