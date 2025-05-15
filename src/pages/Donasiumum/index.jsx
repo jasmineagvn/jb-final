@@ -1,7 +1,7 @@
 import DonasiUmum from "./scan";
 
 
-function DonasiBerkala() {
+function DonasiUmum() {
   return (
     <>
       <DonasiUmum />
@@ -9,4 +9,4 @@ function DonasiBerkala() {
   );
 }
 
-export default DonasiBerkala;
+export default DonasiUmum;

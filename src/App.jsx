@@ -10,7 +10,7 @@ import DaftarSiswa from "./pages/Daftarsiswa";
 import DaftarRelawan from "./pages/Daftarrelawan";
 import DaftarKolaborasi from "./pages/Daftarkolaborasi";
 import KontakKami from "./pages/KontakKami";
-import DonasiBerkala from "./pages/DonasiBerkala";
+import DonasiBerkala from "./pages/Donasiberkala";
 import DonasiUmum from "./pages/Donasiumum/scan";
 import Program from "./pages/Program";
 import Team from "./pages/Team";
