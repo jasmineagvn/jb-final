@@ -11,7 +11,7 @@ import DaftarRelawan from "./pages/Daftarrelawan";
 import DaftarKolaborasi from "./pages/Daftarkolaborasi";
 import KontakKami from "./pages/KontakKami";
 import DonasiBerkala from "./pages/Donasiberkala";
-import DonasiUmum from "./pages/Donasiumum/scan";
+import DonasiUmum from "./pages/Donasiumum";
 import Program from "./pages/Program";
 import Team from "./pages/Team";
 import Kampanye from "./pages/Kampanye";
