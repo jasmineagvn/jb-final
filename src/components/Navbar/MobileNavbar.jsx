@@ -60,9 +60,6 @@ function MobileNavbar() {
                     <Link to="/jbonnews">JB On News</Link>
                   </MenubarItem>
                   <MenubarItem>
-                    <Link to="/divisikami">Divisi</Link>
-                  </MenubarItem>
-                  <MenubarItem>
                     <Link to="/galeri">Galeri</Link>
                   </MenubarItem>
                 </MenubarContent>

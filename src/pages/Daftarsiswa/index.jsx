@@ -11,7 +11,7 @@ function DaftarSiswa() {
         description="Dapatkan pendidikan berkualitas untuk masa depan yang lebih cerah. Bergabunglah bersama kami dan nikmati fasilitas belajar lengkap, program pengembangan siswa, serta lingkungan belajar yang mendukung. "
       />
       <Syarat />
-      <Footer/>
+      <Footer />
     </>
   );
 }

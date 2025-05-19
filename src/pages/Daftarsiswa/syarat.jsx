@@ -37,7 +37,10 @@ const DaftarSiswa = () => {
           <div className="border-t-4 border-black w-full mb-4n"></div>
           <ul className="space-y-3">
             {syaratData.map((item, index) => (
-              <li key={index} className="flex items-start text-gray-700 p-2 mt-4">
+              <li
+                key={index}
+                className="flex items-start text-gray-700 p-2 mt-4"
+              >
                 <img
                   src="/icons/check.png"
                   alt="icon"

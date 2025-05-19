@@ -49,14 +49,6 @@ function DesktopNavbar() {
             </li>
             <li>
               <Link
-                to="/divisikami"
-                className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
-              >
-                Divisi
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/galeri"
                 className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
               >

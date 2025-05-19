@@ -1,9 +1,8 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route, Form } from "react-router";
 import HomePage from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import TentangKami from "./pages/TentangKami";
-import JbOnNews from "./pages/jbonnews";
-import Divisi from "./pages/Divisi";
+import JbOnNews from "./pages/jbonnews"
 import Galeri from "./pages/Galeri";
 import DetailPage from "./components/Gallery/detailpage";
 import DaftarSiswa from "./pages/Daftarsiswa";
@@ -15,6 +14,8 @@ import DonasiUmum from "./pages/Donasiumum";
 import Program from "./pages/Program";
 import Team from "./pages/Team";
 import Kampanye from "./pages/Kampanye";
+import FormRelawan from "./pages/Daftarrelawan/formrelawan";
+import SuccessPage from "./pages/Daftarrelawan/successpage";
 
 
 function App() {
@@ -25,7 +26,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/jbonnews"  element={<JbOnNews />}/>
-        <Route path="/divisikami" element={<Divisi />} />
         <Route path="/galeri" element={<Galeri />} />
         <Route path="/detail/:id" element={<DetailPage />} />
         <Route path="/daftarsiswa" element={<DaftarSiswa />} />
@@ -37,6 +37,8 @@ function App() {
         <Route path="/program" element={<Program />} /> 
         <Route path="/team" element={<Team />} />
         <Route path="/kampanye" element={<Kampanye />} />
+        <Route path="/formrelawan" element={<FormRelawan />} />
+        <Route path="/successpage" element={<SuccessPage />} />
       </Routes>
     </>
   );

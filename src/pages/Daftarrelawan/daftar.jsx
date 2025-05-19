@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Daftar() {
   return (
@@ -8,7 +9,9 @@ function Daftar() {
         Siap Menjadi Bagian dari Sekolah Janji Baik untuk Mewujudkan Masa Depan
         yang Lebih Cerah?
       </h1>
-      <Button variant={"primary"} >Daftar Sebagai Relawan</Button>
+      <Link to="/formrelawan">
+        <button className="bg-[#EC901D] text-white px-6 py-2 w-[250px] h-[50px] mt-10 rounded-full hover:bg-orange-600 transition">Daftar Sebagai Relawan</button>
+      </Link>
     </div>
   );
 }
