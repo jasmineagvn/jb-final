@@ -87,28 +87,28 @@ function DesktopNavbar() {
             </summary>
             <ul className="absolute mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-[12px] p-2 space-y-2 z-50 w-40 hidden group-open:block">
               <li>
-                <a
-                  href="/daftarsiswa"
+                <Link
+                  to="/daftarsiswa"
                   className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Daftar Siswa
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/daftarrelawan"
+                <Link
+                  to="/daftarrelawan"
                   className="block px-3 py-2 text-[#00000080] whitespace-nowrap hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Daftar Relawan
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/daftarkolaborasi"
+                <Link
+                  to="/daftarkolaborasi"
                   className="block px-3 py-2 text-[#00000080] whitespace-nowrap hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Berkolaborasi
-                </a>
+                </Link>
               </li>
             </ul>
           </details>
@@ -142,54 +142,37 @@ function DesktopNavbar() {
             </summary>
             <ul className="absolute mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-[12px] p-2 space-y-2 z-50 w-40 hidden group-open:block">
               <li>
-                <a
-                  href="/donasiberkala"
+                <Link
+                  to="/donasiberkala"
                   className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Berkala Baik
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/donasiumum"
+                <Link
+                  to="/donasiumum"
                   className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Donasi Umum
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/kampanye"
+                <Link
+                  to="/kampanye"
                   className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Kampanye
-                </a>
+                </Link>
               </li>
             </ul>
           </details>
         </li>
         <li>
-          <a href="/kontakkami" className="text-gray-500 dark:text-white">
+          <Link to="/kontakkami" className="text-gray-500 dark:text-white">
             Kontak Kami
-          </a>
+          </Link>
         </li>
-        {/* <button onClick={handleThemeChange}>
-          {theme === "dark" && (
-            <h1>
-              <Moon></Moon>
-            </h1>
-          )}
-          {theme === "light" && (
-            <h1>
-              <Sun></Sun>
-            </h1>
-          )}
-          {theme === "system" && (
-            <h1>
-              <MonitorSmartphone></MonitorSmartphone>
-            </h1>
-          )}
-        </button> */}
       </ul>
     </div>
   );
