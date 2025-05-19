@@ -53,7 +53,8 @@ const beritaCard = [
   },
   {
     image: "/icons/jbonnews/news7.png",
-    title: "Gandeng UMB dan Pemkot Tangsel, Sekolah Janji Baik Kolaborasi Program Kesejahteraan Psikologis",
+    title:
+      "Gandeng UMB dan Pemkot Tangsel, Sekolah Janji Baik Kolaborasi Program Kesejahteraan Psikologis",
     url: "https://faktabanten.co.id/tangerang/gandeng-umb-dan-pemkot-tangsel-sekolah-janji-baik-kolaborasi-program-kesejahteraan-psikologis/",
     date: "2 Mei 2025",
     description:
@@ -61,7 +62,8 @@ const beritaCard = [
   },
   {
     image: "/icons/jbonnews/news8.png",
-    title: "Peringati Suicide Prevention Month, Janji Baik Menyelenggarakan Tentang Pencegahan Bunuh Diri",
+    title:
+      "Peringati Suicide Prevention Month, Janji Baik Menyelenggarakan Tentang Pencegahan Bunuh Diri",
     url: "https://www.kompasiana.com/dianariyanisurya21/66f7f74834777c21856c4412/peringati-suicide-prevention-month-janji-baik-menyelenggarakan-tentang-pencegahan-bunuh-diri",
     date: "28 September 2024",
     description:
@@ -92,10 +94,15 @@ function Berita() {
       <div className="max-w-6xl mt-12 bg-[#A9EAED] rounded-3xl mx-5 md:mx-auto">
         <div className="flex flex-wrap justify-center gap-10 px-9 py-16">
           {beritaCard.map((items, index) => (
-            <div className="flex flex-col gap-4 w-[300px] bg-white px-4 py-5  rounded-2xl">
+            <div key={index} className="flex flex-col gap-4 w-[300px] bg-white px-4 py-5  rounded-2xl">
               <img src={items.image} alt="" />
               <h1 className="text-lg text-[#063FFB] font-semibold leading-snug">
-                <a href={items.url} target="_blank" rel="noopener noreferrer" className="text-[#063FFB] font-semibold hover:underline underline-offset-4 transition-all duration-300">
+                <a
+                  href={items.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#063FFB] font-semibold hover:underline underline-offset-4 transition-all duration-300"
+                >
                   {items.title}
                 </a>
               </h1>

@@ -1,8 +1,5 @@
-import { useTheme } from "@/components/themeprovider";
-import { Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MenuIcon, CircleCheck, ChevronDown, CircleHelp } from "lucide-react";
-import { useState } from "react";
+import { MenuIcon, ChevronDown, } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import {
@@ -22,7 +19,6 @@ import {
 } from "@/components/ui/menubar";
 
 function MobileNavbar() {
-
   return (
     <div className="flex md:hidden">
       <Sheet>
@@ -65,7 +61,7 @@ function MobileNavbar() {
                 </MenubarContent>
               </MenubarMenu>
             </Menubar>
-            
+
             {/* Menubar for daftar */}
             <Menubar>
               <MenubarMenu>
@@ -92,14 +88,12 @@ function MobileNavbar() {
               className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/program">
-                Program
-              </Link>
+              <Link to="/program">Program</Link>
             </Button>
 
             {/* Menubar for donasi */}
             <Menubar>
-              <MenubarMenu >
+              <MenubarMenu>
                 <MenubarTrigger className="flex items-center w-full justify-between">
                   Donasi
                   <ChevronDown className="h-4 w-4" />
@@ -123,9 +117,7 @@ function MobileNavbar() {
               className="flex items-center gap-3 justify-start border-[1px]"
               asChild
             >
-              <Link to="/kontakkami">
-                Kontak Kami
-              </Link>
+              <Link to="/kontakkami">Kontak Kami</Link>
             </Button>
           </nav>
         </SheetContent>

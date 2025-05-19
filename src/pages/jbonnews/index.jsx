@@ -1,6 +1,9 @@
 import Footer from "@/components/Footer";
 import Hero from "../../components/Hero";
-import Berita from "./berita";
+import React, { Suspense } from "react";
+import Spinner from "@/components/Spinner";
+
+const Berita = React.lazy(() => import("./berita"))
 
 function JbOnNews() {
   return (
@@ -10,8 +13,10 @@ function JbOnNews() {
         title="JB On News "
         description="Temukan berbagai cerita inspiratif, program bermanfaat, dan kolaborasi penuh makna yang membawa dampak nyata bagi pendidikan dan kemanusiaan. Bersama, kita bisa menyalakan harapan, membangun masa depan, dan menciptakan perubahan untuk dunia yang lebih baik! "
       />
-      <Berita />
-      <Footer/>
+      <Suspense fallback={<Spinner />}>
+        <Berita />
+      </Suspense>
+      <Footer />
     </>
   );
 }
