@@ -1,6 +1,9 @@
 import Footer from "@/components/Footer";
 import Hero from "../../components/Hero";
-import Syarat from "./syarat";
+import React, { Suspense } from "react";
+import Spinner from "@/components/Spinner";
+
+const Syarat = React.lazy(() => import("./syarat"));
 
 function DaftarSiswa() {
   return (
@@ -10,7 +13,9 @@ function DaftarSiswa() {
         title="Menjadi Siswa Janji Baik "
         description="Dapatkan pendidikan berkualitas untuk masa depan yang lebih cerah. Bergabunglah bersama kami dan nikmati fasilitas belajar lengkap, program pengembangan siswa, serta lingkungan belajar yang mendukung. "
       />
-      <Syarat />
+      <Suspense fallback={<Spinner />}>
+        <Syarat />
+      </Suspense>
       <Footer />
     </>
   );

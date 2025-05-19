@@ -30,7 +30,7 @@ const DaftarSiswa = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6 items-start">
-        <div className="bg-[#E7F6F7] rounded-xl p-6 shadow-xl w-[757px] h-[780px]">
+        <div className="bg-[#E7F6F7] rounded-xl p-6 shadow-xl w-full h-full lg:w-[757px] lg:h-[780px]">
           <h3 className="text-lg font-bold mb-4">
             Syarat & <br /> Ketentuan
           </h3>

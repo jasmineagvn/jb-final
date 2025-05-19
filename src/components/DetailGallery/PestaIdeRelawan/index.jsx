@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Hero from "@/components/Hero";
-import Content from "./content";
 import Footer from "@/components/Footer";
+import Spinner from "@/components/Spinner";
+
+const Content = React.lazy(() => import("./content"));
 
 function PestaIdeRelawan() {
   return (
@@ -11,7 +13,9 @@ function PestaIdeRelawan() {
         description="Setiap gambar menyimpan kisah semangat dan kolaborasi. Inilah momen-momen seru dan penuh ide yang telah kami rayakan bersama. Mari terus menyalakan inspirasi dan bergerak bersama untuk perubahan"
         image="/icons/bg-galleri2.png"
       />
-      <Content />
+      <Suspense fallback={<Spinner />}>
+        <Content />
+      </Suspense>
       <Footer />
     </div>
   );

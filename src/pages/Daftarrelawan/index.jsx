@@ -1,12 +1,19 @@
 import Footer from "@/components/Footer";
-import Content from "./content";
-import Daftar from "./daftar";
+import React, { Suspense } from "react";
+import Spinner from "@/components/Spinner";
+
+const Content = React.lazy(() => import("./content"));
+const Daftar = React.lazy(() => import("./daftar"));
 
 function DaftarRelawan() {
   return (
     <>
-      <Content />
-      <Daftar />
+      <Suspense fallback={<Spinner />}>
+        <Content />
+      </Suspense>
+      <Suspense fallback={<Spinner />}>
+        <Daftar />
+      </Suspense>
       <Footer />
     </>
   );

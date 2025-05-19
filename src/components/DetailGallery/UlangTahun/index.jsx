@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Hero from "@/components/Hero";
-import Content from "./content";
 import Footer from "@/components/Footer";
+import Spinner from "@/components/Spinner";
+
+const Content = React.lazy(() => import("./content"));
 
 function UlangTahun() {
   return (
@@ -11,7 +13,9 @@ function UlangTahun() {
         title="Ulang Tahun Janji Baik"
         description="Setiap gambar adalah jejak perjalanan penuh makna. Inilah momen-momen hangat ulang tahun Janji Baik yang dirayakan dengan syukur dan harapan. Mari terus melangkah bersama, berbagi kebaikan tanpa henti!"
       />
-      <Content />
+      <Suspense fallback={<Spinner />}>
+        <Content />
+      </Suspense>
       <Footer />
     </>
   );

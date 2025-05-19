@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import SekolahGratis from "@/components/Program/SekolahGratis";
+import React, { Suspense, useState } from "react";
 import Hero from "@/components/Hero";
-import Lingkungan from "@/components/Program/Lingkungan";
-import Bimbingan from "@/components/Program/Bimbingan";
-import Kesejahteraan from "@/components/Program/Kesejahteraan";
-import Komunitas from "@/components/Program/Komunitas";
 import Footer from "@/components/Footer";
+import Spinner from "@/components/Spinner";
+
+const SekolahGratis = React.lazy(() => import("@/components/Program/SekolahGratis"));
+const Lingkungan = React.lazy(() => import("@/components/Program/Lingkungan"));
+const Bimbingan = React.lazy(() => import("@/components/Program/Bimbingan"));
+const Kesejahteraan = React.lazy(() => import("@/components/Program/Kesejahteraan"));
+const Komunitas = React.lazy(() => import("@/components/Program/Komunitas"));
 
 function ProgramPage() {
-
   // Data navigasi
   const tabs = [
     {
@@ -35,7 +36,7 @@ function ProgramPage() {
       id: "Komunitas",
       title: "Komunitas Kerelawanan",
       component: <Komunitas />,
-    }
+    },
   ];
 
   const [activePage, setActivePage] = useState(tabs[0].id);
@@ -67,7 +68,9 @@ function ProgramPage() {
 
       {/* Halaman Konten */}
       <div className="container mx-auto p-6">
-        {tabs.find((tab) => tab.id === activePage)?.component}
+        <Suspense fallback={<Spinner />}>
+          {tabs.find((tab) => tab.id === activePage)?.component}
+        </Suspense>
       </div>
       <Footer />
     </div>

@@ -29,7 +29,7 @@ function CardGallery({ currentPage, cardsPerPage, cards }) {
           <div
             key={card.id}
             className="w-[320px] py-4 px-5 bg-white gap-6 flex flex-col items-center justify-center rounded shadow cursor-pointer"
-            onClick={() => handleCardClick(card.id)} // Panggil handler dengan ID kartu
+            onClick={() => handleCardClick(card.id)}
           >
             <img
               src={card.image || "/icons/default-image.png"}
