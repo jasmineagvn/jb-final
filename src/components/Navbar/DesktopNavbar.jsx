@@ -2,7 +2,6 @@ import { Link } from "react-router";
 
 function DesktopNavbar() {
 
-
   return (
     <div className="hidden md:flex">
       <ul className="flex gap-10 items-center">
