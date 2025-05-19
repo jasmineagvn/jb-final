@@ -1,77 +1,77 @@
 const TeamMembers = [
   {
     name: "Jovi Oktaviansyah",
-    role: "Sebagian Pendiri Yayasan",
+    role: "Pendiri Yayasan",
     image: "icons/teamkami/kajovi.png",
   },
   {
     name: "Syahroy",
-    role: "Sebagai Ketua Yayasan",
+    role: "Ketua Yayasan",
     image: "icons/teamkami/kasyahroy.png",
   },
   {
     name: "Siti Lailatul Fauziah",
-    role: "Sebagai Kepala Sekolah Janji Baik",
+    role: "Kepala Sekolah Janji Baik",
     image: "icons/teamkami/kazi.png",
   },
   {
     name: "Fitra Mutiarahayu",
-    role: "Sebagai Sekretaris Yayasan",
+    role: "Sekretaris Yayasan",
     image: "icons/teamkami/kamut.png",
   },
   {
     name: "Rochma Solehah (Omen) ",
-    role: "Sebagai Kadiv Creative Seeker",
+    role: "Kadiv Creative Seeker",
     image: "icons/teamkami/kaomen.png",
   },
   {
     name: "Khalissa",
-    role: "Sebagai Wakil Kadiv Creative Seeker",
+    role: "Wakil Kadiv Creative Seeker",
     image: "icons/teamkami/kakhalis.png",
   },
   {
     name: "Zulfa Yustianuari",
-    role: "Sebagai Kadiv Counselor",
+    role: "Kadiv Counselor",
     image: "icons/teamkami/kazulfa.png",
   },
   {
     name: "Nada Indah",
-    role: "Sebagai Wakil Kadiv Counselor",
+    role: "Wakil Kadiv Counselor",
     image: "icons/teamkami/kanada.png",
   },
   {
     name: "Pandu Pangestu",
-    role: "Sebagai Kadiv Human Responsibility",
+    role: "Kadiv Human Responsibility",
     image: "icons/teamkami/kapandu.png",
   },
   {
     name: "Fergie Virginia",
-    role: "Sebagai Wakil Kadiv Human Responsibility",
+    role: "Wakil Kadiv Human Responsibility",
     image: "icons/teamkami/kafergie.png",
   },
   {
     name: "Elisa Vernandes",
-    role: "Sebagai Kadiv Growth Maker",
+    role: "Kadiv Growth Maker",
     image: "icons/teamkami/kaelisa.png",
   },
   {
     name: "Muhammad Sofiyudin",
-    role: "Sebagai Wakil Kadiv Growth Maker",
+    role: "Wakil Kadiv Growth Maker",
     image: "icons/teamkami/kasofiyudin.png",
   },
   {
     name: "Aida Safrizal",
-    role: "Sebagai Kadiv Student Glory",
+    role: "Kadiv Student Glory",
     image: "icons/teamkami/kaaida.png",
   },
   {
     name: "Kayla Azzura",
-    role: "Sebagai Kadiv Digital Heroes",
+    role: "Kadiv Digital Heroes",
     image: "icons/teamkami/kakayla.png",
   },
   {
     name: "Sujin Latifa",
-    role: "Sebagai Kadiv Canvas Think",
+    role: "Kadiv Canvas Think",
     image: "icons/teamkami/kasujin.png",
   },
 ];

@@ -4,7 +4,7 @@ import BerkalaBaikSection from "./pagination";
 function DonasiBerkala() {
   return (
     <>
-    <BerkalaBaikSection />
+      <BerkalaBaikSection />
       <Footer />
     </>
   );
