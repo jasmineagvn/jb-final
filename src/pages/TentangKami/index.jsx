@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import VisiMisi from "./VisiMisi";
+import VisiMisi from "./visimisi";
 import Legalitas from "./legalitas";
 import Manfaat from "./manfaat";
 import PrinsipSekolah from "./prinsip";

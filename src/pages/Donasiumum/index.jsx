@@ -1,12 +1,12 @@
-import DonasiUmum from "./scan";
+import Scan from "./scan";
 
 
-function DonasiBerkala() {
+function DonasiUmum() {
   return (
     <>
-      <DonasiUmum />
+      <Scan />
     </>
   );
 }
 
-export default DonasiBerkala;
+export default DonasiUmum;

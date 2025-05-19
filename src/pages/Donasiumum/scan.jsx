@@ -1,4 +1,4 @@
-export default function DonasiUmum() {
+export default function Scan() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
       <h1 className="text-[35px] lg:text-4xl leading-tight font-bold text-center mb-4">
