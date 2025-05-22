@@ -67,10 +67,13 @@ const SyaratSiswa = () => {
             Tertarik Jadi Siswa Hebat yang Janji Gak Cuma Cerdas, Tapi Juga
             Baik?
           </p>
-          <p className="mb-4 text-base lg:text-[24px] font-bold">
+          <p className="mb-8 text-base lg:text-[24px] font-bold">
             Yuk, Klik Daftar Sekarang!
           </p>
-          <Link to={"/daftarsiswa"} className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-full">
+          <Link
+            to={"/daftarsiswa"}
+            className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-full"
+          >
             Daftar Siswa Sekarang
           </Link>
         </div>

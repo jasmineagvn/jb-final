@@ -10,7 +10,7 @@ function Step2IdentitasOrangTua({
         Identitas Ayah
       </h2>
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Nama Lengkap <span className="text-red-600">*</span>
       </label>
       <input
@@ -22,7 +22,7 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Agama <span className="text-red-600">*</span>
       </label>
       <input
@@ -34,14 +34,14 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Pendidikan Terakhir <span className="text-red-600">*</span>
       </label>
       <select
         name="ayahPendidikan"
         value={formData.ayahPendidikan}
         onChange={handleChange}
-        className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
+        className="w-[455px] border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
       >
         <option value="">Opsi Pilihan</option>
         <option value="Tidak Sekolah">Tidak Sekolah</option>
@@ -53,7 +53,7 @@ function Step2IdentitasOrangTua({
         <option value="Pascasarjana">Pascasarjana</option>
       </select>
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Pekerjaan <span className="text-red-600">*</span>
       </label>
       <input
@@ -65,7 +65,7 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Jumlah Penghasilan <span className="text-red-600">*</span>
       </label>
       <input
@@ -77,7 +77,7 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Riwayat Penyakit <span className="text-red-600">*</span>
       </label>
       <input
@@ -89,7 +89,7 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Alamat Lengkap (Sesuai KTP/KK) <span className="text-red-600">*</span>
       </label>
       <input
@@ -101,7 +101,7 @@ function Step2IdentitasOrangTua({
         className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         No.HP atau WhatsApp <span className="text-red-600">*</span>
       </label>
       <input
@@ -117,7 +117,7 @@ function Step2IdentitasOrangTua({
         Identitas Ibu
       </h2>
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Nama Lengkap <span className="text-red-600">*</span>
       </label>
       <input
@@ -130,7 +130,7 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Agama <span className="text-red-600">*</span>
       </label>
       <input
@@ -143,14 +143,14 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Pendidikan Terakhir <span className="text-red-600">*</span>
       </label>
       <select
         name="ibuPendidikan"
         value={formData.ibuPendidikan}
         onChange={handleChange}
-        className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
+        className="w-[455px] border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
         required
       >
         <option value="">Opsi Pilihan</option>
@@ -163,7 +163,7 @@ function Step2IdentitasOrangTua({
         <option value="Pascasarjana">Pascasarjana</option>
       </select>
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Pekerjaan <span className="text-red-600">*</span>
       </label>
       <input
@@ -176,7 +176,7 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Jumlah Penghasilan <span className="text-red-600">*</span>
       </label>
       <input
@@ -189,7 +189,7 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Riwayat Penyakit <span className="text-red-600">*</span>
       </label>
       <input
@@ -202,7 +202,7 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         Alamat Lengkap (Sesuai KTP/KK) <span className="text-red-600">*</span>
       </label>
       <input
@@ -215,7 +215,7 @@ function Step2IdentitasOrangTua({
         required
       />
 
-      <label className="block mb-2">
+      <label className="block mb-2 text-[#12121299] font-semibold">
         No.HP atau WhatsApp <span className="text-red-600">*</span>
       </label>
       <input
@@ -233,7 +233,7 @@ function Step2IdentitasOrangTua({
       </h2>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Nama Lengkap <span className="text-red-600">*</span>
         </label>
         <input
@@ -248,7 +248,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Agama <span className="text-red-600">*</span>
         </label>
         <input
@@ -263,14 +263,14 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Pendidikan Terakhir <span className="text-red-600">*</span>
         </label>
         <select
           name="waliPendidikan"
           value={formData.waliPendidikan}
           onChange={handleChange}
-          className="w-full border border-gray-500 p-2 rounded-[12px] px-5 py-4"
+          className="w-[455px] border border-gray-500 p-2 rounded-[12px] px-5 py-4 text-[#12121299]"
           required
         >
           <option value="">Opsi Pilihan</option>
@@ -285,7 +285,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Pekerjaan <span className="text-red-600">*</span>
         </label>
         <input
@@ -300,7 +300,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Jumlah Penghasilan <span className="text-red-600">*</span>
         </label>
         <input
@@ -315,7 +315,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Riwayat Penyakit <span className="text-red-600">*</span>
         </label>
         <input
@@ -330,7 +330,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-4">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           Alamat Lengkap (Sesuai KTP/KK) <span className="text-red-600">*</span>
         </label>
         <input
@@ -345,7 +345,7 @@ function Step2IdentitasOrangTua({
       </div>
 
       <div className="mb-8">
-        <label className="block mb-2">
+        <label className="block mb-2 text-[#12121299] font-semibold">
           No.HP atau WhatsApp <span className="text-red-600">*</span>
         </label>
         <input

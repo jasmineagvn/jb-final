@@ -17,7 +17,11 @@ import Kampanye from "./pages/Kampanye";
 import FormRelawan from "./pages/Daftarrelawan/formrelawan";
 import SuccessPage from "./pages/Daftarrelawan/successpage";
 import SyaratPage from "./pages/Daftarsiswa/syarat";
-
+import JbBercerita from "./pages/Program/jbbercerita";
+import FormBercerita from "./pages/Program/formbercerita";
+import SuccessPageBercerita from "./pages/Program/successpage";
+import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
+import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
 
 function App() {
   return (
@@ -41,6 +45,11 @@ function App() {
         <Route path="/kampanye" element={<Kampanye />} />
         <Route path="/formrelawan" element={<FormRelawan />} />
         <Route path="/successpage" element={<SuccessPage />} />
+        <Route path="/jbbercerita" element={<JbBercerita />} />
+        <Route path="/formbercerita" element={<FormBercerita />} />
+        <Route path="/successpagebercerita" element={<SuccessPageBercerita />} />
+        <Route path="/formberkalabaik" element={<FormBerkalaBaik />} />
+        <Route path="/successpageberkalabaik" element={<SuccessPageBerkalaBaik />} />
       </Routes>
     </>
   );

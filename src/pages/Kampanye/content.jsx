@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const campaigns = [
   {
     image: "/icons/kampanye/kampanye1.png",
@@ -21,7 +23,7 @@ const campaigns = [
     target: 5000000,
   },
   {
-    image: "/icons/kampanye/kampanye3.png",
+    image: "/icons/kampanye/kampanye4.png",
     tag: "Donasi Kampanye Tetap",
     title:
       "Bekal Belajar untuk Anak Negeri – Donasi Alat Tulis untuk Sekolah Janji Baik",
@@ -85,12 +87,15 @@ const CampaignList = () => {
           <p className="font-semibold text-lg lg:text-[24px] mb-2 px-3">
           Kami sudah melangkah lebih dulu. Sekarang giliranmu!
           </p>
-          <p className="mb-4 text-base lg:text-[24px] font-bold">
+          <p className="mb-10 text-base lg:text-[24px] font-bold">
           Apa aksi baikmu yang akan kamu mulai hari ini?
           </p>
-          <button className="bg-orange-400 text-sm lg:text-base hover:bg-orange-500 text-white px-6 py-2 rounded-[55px] w-[400px] h-[65px] mt-4">
+          <Link
+            to={"/daftarkolaborasi"}
+            className="bg-orange-400 text-sm lg:text-base font-semibold hover:bg-orange-500 text-white px-8 py-4 w-[400px] h-[65px] mt-20 rounded-full"
+          >
             Buat Aksi Baik Kamu, Yuk!
-          </button>
+          </Link>
         </div>
       </div>
     </div>

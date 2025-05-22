@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Spinner from "@/components/Spinner";
 import React, { Suspense } from "react";
@@ -15,6 +16,7 @@ function SyaratPage() {
       <Suspense fallback={<Spinner />}>
         <SyaratSiswa />
       </Suspense>
+      <Footer />
     </div>
   );
 }

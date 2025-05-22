@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const cardBimbingan = [
   {
     img: "/icons/program/p9.png",
@@ -34,9 +36,9 @@ function Bimbingan() {
             <p className="text-sm lg:text-base text-[#72717B]">{card.desc}</p>
 
             {card.title === "Janji Baik Bercerita" && (
-              <button className="mt-2 w-[278px] h-[53px] px-5 py-2 bg-orange-400 hover:bg-orange-500 text-white text-sm font-semibold rounded-full shadow">
+              <Link to={"/jbbercerita"} className="mt-2 text-center w-[278px] h-[53px] px-5 py-4 bg-orange-400 hover:bg-orange-500 text-white text-sm font-semibold rounded-full shadow">
                 Yuk Mulai Ceritamu!
-              </button>
+              </Link>
             )}
           </div>
         </div>

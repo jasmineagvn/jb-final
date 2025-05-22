@@ -9,7 +9,7 @@ const PrinsipSekolah = () => {
 
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center md:gap-24 mt-0 mb-32">
             <div className="flex flex-wrap w-[315px] h-[247px]">
-                <img src="/icons/sdgs1.png" className="max-w-full h-auto object-contain" />
+                <img src="/icons/sdgs.png" className="max-w-full h-auto object-contain" />
             </div>
             <div className="flex flex-wrap justify-center w-[315px] h-[247px]">
                 <img src="/icons/global.png" className="max-w-full h-auto object-contain" />

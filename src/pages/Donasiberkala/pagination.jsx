@@ -29,7 +29,7 @@ const BerkalaBaikSection = () => {
           untuk melangkah lebih jauh dan lanjutkan perjalananmu <br />bersama kami!
         </p>
         <button
-          onClick={() => navigate('/lanjutkan')}
+          onClick={() => navigate('/formberkalabaik')}
           className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-orange-600 transition"
         >
           Lanjutkan Langkahmu

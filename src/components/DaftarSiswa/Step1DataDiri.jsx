@@ -1,6 +1,6 @@
 const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
   <div className="w-[928px] mx-auto">
-    <label className="block mb-2">
+    <label className="block mb-2 text-[#12121299] font-semibold">
       Nama Lengkap <span className="text-red-600">*</span>
     </label>
     <input
@@ -12,21 +12,21 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
     />
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Jenis Kelamin <span className="text-red-600">*</span>
     </label>
     <select
       name="jenisKelamin"
       value={formData.jenisKelamin}
       onChange={handleChange}
-      className="border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 w-[455px]"
+      className="border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 w-[455px] text-[#12121299]"
     >
       <option value="">Opsi Pilihan</option>
       <option value="Laki-laki">Laki-laki</option>
       <option value="Perempuan">Perempuan</option>
     </select>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Tempat Lahir <span className="text-red-500">*</span>
     </label>
     <input
@@ -40,7 +40,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
 
     <div className="flex gap-4">
       <div className="flex-1">
-        <label className="block mb-2">
+        <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
           Tanggal Lahir <span className="text-red-500">*</span>
         </label>
         <input
@@ -48,11 +48,11 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
           name="tanggalLahir"
           value={formData.tanggalLahir}
           onChange={handleChange}
-          className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
+          className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
         />
       </div>
       <div className="flex-1">
-        <label className="block mb-2">
+        <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
           Umur <span className="text-red-500">*</span>
         </label>
         <input
@@ -65,7 +65,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       </div>
     </div>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       NIK (Apabila Belum mempunyai KTP bisa dilihat di Kartu Keluarga){" "}
       <span className="text-red-500">*</span>
     </label>
@@ -77,8 +77,8 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
     />
 
-    <label className="block mb-2">Tingkatan yang Dituju *</label>
-    <div className="mb-4 flex flex-col gap-4">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">Tingkatan yang Dituju *</label>
+    <div className="mb-4 flex flex-col gap-6 text-[#12121299]">
       {[
         "Paket A (Setara SD)",
         "Paket B (Setara SMP)",
@@ -98,14 +98,14 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       ))}
     </div>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Kelas yang Dituju <span className="text-red-500">*</span>
     </label>
     <select
       name="kelas"
       value={formData.kelas}
       onChange={handleChange}
-      className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
+      className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
     >
       <option value="">Opsi Pilihan</option>
       <option value="Kelas 1">Kelas 1</option>
@@ -113,7 +113,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       <option value="Kelas 3">Kelas 3</option>
     </select>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Kelas/Tingkatan Terakhir (sesuai rapor terakhir yang dimiliki){" "}
       <span className="text-red-500">*</span>
     </label>
@@ -126,10 +126,10 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
     />
 
     <div className="mb-4">
-      <label className="block mb-2">
+      <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
         Status dalam Keluarga <span className="text-red-500">*</span>
       </label>
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-6 text-[#12121299] ">
         {["Anak Kandung", "Anak Angkat", "Anak Sambung/Tiri"].map((opt) => (
           <div key={opt}>
             <input
@@ -145,7 +145,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       </div>
     </div>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Alamat Lengkap (sesuai KTP/KK) <span className="text-red-600">*</span>
     </label>
     <input
@@ -157,10 +157,10 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
     />
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Status Tempat Tinggal <span className="text-red-600">*</span>
     </label>
-    <div className="mb-4 flex flex-col gap-2">
+    <div className="mb-4 flex flex-col gap-6 text-[#12121299]">
       {["Sewa", "Milik Pribadi", "Tinggal dengan Saudara"].map((item, idx) => (
         <label key={idx} className="block">
           <input
@@ -176,10 +176,10 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       ))}
     </div>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Berapa KWH Listrik <span className="text-red-600">*</span>
     </label>
-    <div className="mb-4 flex flex-col gap-2">
+    <div className="mb-4 flex flex-col gap-6 text-[#12121299]">
       {["450", "900", "1300", "2200", "3500 ke atas"].map((item, idx) => (
         <label key={idx} className="block">
           <input
@@ -195,7 +195,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       ))}
     </div>
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Riwayat Penyakit (isi tanda "-" jika tidak ada){" "}
       <span className="text-red-600">*</span>
     </label>
@@ -208,7 +208,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
     />
 
-    <label className="block mb-2">
+    <label className="block mb-2 mt-6 text-[#12121299] font-semibold">
       Alasan Melanjutkan Sekolah <span className="text-red-600">*</span>
     </label>
     <input

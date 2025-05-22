@@ -22,7 +22,7 @@ function Content() {
         <div className="mt-12 flex flex-col gap-4 px-5 md:px-0">
           <img src="/icons/GraduationSiswa/gambar1.png" alt="" />
           <div className="flex flex-wrap justify-between gap-4">
-            <img src="/icons/GraduationSiswa/gambar6.png" alt="" className="w-[565px]" />
+            <video src="/videogaleri/graduation/G1.mp4" controls className="w-[565px]" />
             <div className="flex flex-wrap w-[565px] gap-4">
               <img
                 src="/icons/GraduationSiswa/gambar3.png"

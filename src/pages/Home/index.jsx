@@ -1,4 +1,6 @@
 import React, { Suspense } from "react";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Spinner from "@/components/Spinner";
@@ -10,6 +12,7 @@ const Testimoni = React.lazy(() => import("./testi"));
 const PartnerSection = React.lazy(() => import("./kolaborasi"));
 
 function HomePage() {
+  const [ref, inView] = useInView({ triggerOnce: true });
   return (
     <>
       <Hero
@@ -28,20 +31,38 @@ function HomePage() {
           </button>
         </div>
 
-        <div className="hidden lg:flex bg-[#01B4BB] absolute bottom-[-70px] justify-center items-center py-6 px-6 rounded-3xl">
-          <div className="flex flex-col gap-5 items-center border-r-1 border-white w-[228px]">
-            <h1 className="text-[50px] font-semibold text-white">0 +</h1>
-            <p className="text-sm text-white/70">Anak Penerima Manfaat</p>
+        <div
+          ref={ref}
+          className="hidden lg:flex absolute bottom-[-70px] left-1/2 transform -translate-x-1/2 bg-[#01B4BB] justify-between items-center py-6 px-12 rounded-3xl max-w-5xl w-full shadow-lg"
+        >
+          {/* Anak Penerima Manfaat */}
+          <div className="flex flex-col gap-2 items-center w-1/3 border-r border-white">
+            <h1 className="text-[50px] font-semibold text-white">
+              {inView ? <CountUp end={573} duration={4} /> : 0} +
+            </h1>
+            <p className="text-sm text-white/70 text-center">
+              Anak Penerima Manfaat
+            </p>
           </div>
-          <div className="flex flex-col gap-5 items-center border-r-1 border-white w-[228px]">
-            <h1 className="text-[50px] font-semibold text-white">0 +</h1>
-            <p className="text-sm text-white/70">
+
+          {/* Kolaborasi Mitra */}
+          <div className="flex flex-col gap-2 items-center w-1/3 border-r border-white">
+            <h1 className="text-[50px] font-semibold text-white">
+              {inView ? <CountUp end={141} duration={4} /> : 0} +
+            </h1>
+            <p className="text-sm text-white/70 text-center">
               Kolaborasi Mitra yang Terjalin
             </p>
           </div>
-          <div className="flex flex-col gap-5 items-center  w-[228px]">
-            <h1 className="text-[50px] font-semibold text-white">0 +</h1>
-            <p className="text-sm text-white/70">Kota di seluruh Indonesia</p>
+
+          {/* Kota */}
+          <div className="flex flex-col gap-2 items-center w-1/3">
+            <h1 className="text-[50px] font-semibold text-white">
+              {inView ? <CountUp end={180} duration={4} /> : 0} +
+            </h1>
+            <p className="text-sm text-white/70 text-center">
+              Kota di seluruh Indonesia
+            </p>
           </div>
         </div>
       </Hero>

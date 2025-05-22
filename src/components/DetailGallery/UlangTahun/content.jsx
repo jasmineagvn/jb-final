@@ -22,15 +22,15 @@ function Content() {
         <div className="mt-12 flex flex-col gap-4 px-5 md:px-0">
           <img src="/icons/ulangtahun/gambar1.png" alt="" />
           <div className="flex flex-wrap justify-between gap-4">
-            <img
-              src="/icons/ulangtahun/gambar2.png"
-              alt=""
+            <video
+              src="/videogaleri/ultahjb/ultah1.mp4"
+              controls
               className="w-[565px]"
             />
             <div className="flex flex-wrap justify-between gap-4">
-              <img
-                src="/icons/ulangtahun/gambar7.png"
-                alt=""
+              <video
+                src="/videogaleri/ultahjb/ultah2.mp4"
+                controls
                 className="w-[565px]"
               />
             </div>

@@ -21,29 +21,29 @@ function Content() {
 
         <div className="mt-12 flex flex-col gap-4 px-5 md:px-0">
           <div className="flex flex-wrap justify-between gap-4">
-            <img
-              src="/icons/kegiatanbelajar/kbm1.png"
-              alt=""
+            <video
+              src="/videogaleri/KBM/b5.mp4"
+              controls
               className="w-[565px]"
             />
-            <img
-              src="/icons/kegiatanbelajar/kbm2.png"
-              alt=""
+            <video
+              src="/videogaleri/KBM/b1.mp4"
+              controls
               className="w-[565px]"
             />
             <img
               src="/icons/kegiatanbelajar/kbm3.png"
               alt=""
+              className=" h-[500px] w-[680px]"
+            />
+            <video
+              src="/videogaleri/KBM/b3.mp4"
+              controls
               className="w-[565px]"
             />
-            <img
-              src="/icons/kegiatanbelajar/kbm4.png"
-              alt=""
-              className="w-[565px]"
-            />
-             <img
-              src="/icons/kegiatanbelajar/kbm5.png"
-              alt=""
+            <video
+              src="/videogaleri/KBM/b4.mp4"
+              controls
               className="w-[565px]"
             />
           </div>

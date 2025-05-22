@@ -46,10 +46,10 @@ function Content() {
           <img src="/icons/PestaIdeRelawan/gambar6.png" alt="" />
           <div className="flex flex-col md:flex-row justify-between gap-4">
             <div className="flex flex-col w-full md:w-[565px] gap-4">
-              <img src="/icons/PestaIdeRelawan/gambar7.png" alt="" />
+              <video src="/videogaleri/pestaiderelawan/k1.mp4" controls />
             </div>
             <div className="flex flex-col w-full md:w-[565px] gap-4">
-              <img src="/icons/PestaIdeRelawan/gambar11.png" alt="" />
+              <video src="/videogaleri/pestaiderelawan/k4.mp4" controls />
             </div>
           </div>
         </div>

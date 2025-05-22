@@ -45,16 +45,6 @@ function Content() {
                     alt=""
                     className="h-[341px] w-[565px]"
                     />
-                    <img
-                    src="/icons/pkmgaleri/kosong.png"
-                    alt=""
-                    className="h-[341px]  w-[565px] "
-                    />
-                    <img
-                    src="/icons/pkmgaleri/kosong.png"
-                    alt=""
-                    className="h-[341px]  w-[565px] "
-                    />
                 </div>
             </div>
         </div>
@@ -66,8 +56,8 @@ function Content() {
         </div>
 
         <div className="mt-10 flex gap-4 justify-between">
-          <img src="/icons/pkmgaleri/video2.png" alt="" className="w-[565px]" />
-          <img src="/icons/pkmgaleri/video3.png" alt="" className="w-[565px]" />
+          <video src="/videogaleri/PKM/untirta1.mp4" controls className="w-[565px]" />
+          <video src="/videogaleri/PKM/untirta2.mp4" controls className="w-[565px]" />
         </div>
 
         <div className="mt-16 mx-8 md:mx-0 bg-[#EC901D] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer ">

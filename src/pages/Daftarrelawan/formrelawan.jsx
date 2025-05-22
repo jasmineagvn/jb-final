@@ -48,7 +48,16 @@ const FormRelawan = () => {
       label: "Divisi yang Dipilih",
       name: "divisi",
       type: "select",
-      options: ["Canvas Think", "Human Responsibility", "Creative Seeker", "Tutor & CareTaker", "Growth Maker", "Student Glory", "Digital Heroes", "Counselor"],
+      options: [
+        "Canvas Think",
+        "Human Responsibility",
+        "Creative Seeker",
+        "Tutor & CareTaker",
+        "Growth Maker",
+        "Student Glory",
+        "Digital Heroes",
+        "Counselor",
+      ],
       required: true,
     },
     {
@@ -102,7 +111,6 @@ const FormRelawan = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Tambahkan logika kirim data di sini
     alert("Form dikirim!");
   };
 
@@ -141,7 +149,7 @@ const FormRelawan = () => {
               <select
                 name={field.name}
                 required={field.required}
-                className="w-[455px] border-2 rounded-[12px] p-2 text-[#72717B]"
+                className="w-[455px] h-[56px] border-2 rounded-[12px] p-2 text-[#72717B]"
               >
                 <option value="">Opsi Pilihan</option>
                 {field.options.map((opt, idx) => (
@@ -156,7 +164,9 @@ const FormRelawan = () => {
                 name={field.name}
                 required={field.required}
                 placeholder={field.placeholder}
-                className="w-full h-[56px] border-2 rounded-[12px] p-2"
+                className={`h-[56px] border-2 rounded-[12px] p-2 ${
+                  field.name === "tanggalLahir" ? "w-[425px] text-[#12121299]" : "w-full"
+                }`}
               />
             )}
           </div>

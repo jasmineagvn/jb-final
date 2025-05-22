@@ -2,6 +2,7 @@ function Hero(props) {
   const {
     image,
     title,
+    sub,
     description,
     children,
   } = props;
@@ -17,6 +18,7 @@ function Hero(props) {
         <h1 className="text-4xl md:text-[50px] font-bold tracking-[-0.7px] text-center text-white">
           {title}
         </h1>
+        <p className="text-[50px] md:text-base font-bold text-white">{sub}</p>
         <p className="text-sm md:text-base text-white text-center w-full md:w-[700px]">
           {description}
         </p>

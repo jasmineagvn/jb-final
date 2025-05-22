@@ -6,7 +6,7 @@ function Step3Darurat({ formData, handleChange, handleSubmit }) {
       </h2>
 
       <div>
-        <label className="block mb-2 font-medium">
+        <label className="block mb-2 font-semibold text-[#12121299]">
           Nama Lengkap<span className="text-red-500">*</span>
         </label>
         <input
@@ -21,7 +21,7 @@ function Step3Darurat({ formData, handleChange, handleSubmit }) {
       </div>
 
       <div>
-        <label className="block mb-2 font-medium">
+        <label className="block mb-2 font-semibold text-[#12121299]">
           Hubungan dengan Siswa (Om/Tante, Sepupu, Kakak, dll)
           <span className="text-red-500">*</span>
         </label>
@@ -37,7 +37,7 @@ function Step3Darurat({ formData, handleChange, handleSubmit }) {
       </div>
 
       <div>
-        <label className="block mb-2 font-medium">
+        <label className="block mb-2 font-semibold text-[#12121299]">
           Alamat Lengkap (Sesuai KTP/KK)<span className="text-red-500">*</span>
         </label>
         <input
@@ -52,7 +52,7 @@ function Step3Darurat({ formData, handleChange, handleSubmit }) {
       </div>
 
       <div>
-        <label className="block mb-2 font-medium">
+        <label className="block mb-2 font-semibold text-[#12121299]">
           No.HP atau WhatsApp<span className="text-red-500">*</span>
         </label>
         <input

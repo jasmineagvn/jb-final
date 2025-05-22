@@ -46,9 +46,9 @@ function Content() {
           </div>
           <img src="/icons/PeringatanNasional/gambar6.png" alt="" />
           <div className="flex flex-wrap justify-between gap-4">
-            <img
-              src="/icons/PeringatanNasional/gambar7.png"
-              alt=""
+            <video
+              src="/videogaleri/peringatanharinasional/agustusan/179.mp4"
+              controls
               className="w-[565px]"
             />
             <div className="w-[565px] flex flex-wrap gap-4">
@@ -73,24 +73,8 @@ function Content() {
         </div>
 
         <div className="mt-10 flex gap-4 justify-between">
-          <div className="flex flex-wrap gap-4 ">
-            <img
-              src="/icons/PeringatanNasional/gambar8.png"
-              alt=""
-              className="h-[341px] w-[565px]"
-            />
-            <img
-              src="/icons/PeringatanNasional/gambar8.png"
-              alt=""
-              className="h-[341px]  w-[565px] "
-            />
-            <img
-              src="/icons/PeringatanNasional/gambar8.png"
-              alt=""
-              className="h-[341px]  w-[565px] "
-            />
-          </div>
-          <img src="/icons/PeringatanNasional/gambar9.png" alt="" className="w-[565px]" />
+          <video src="/videogaleri/peringatanharinasional/hardiknas/hardiknas1.mp4" controls className="w-[565px]" />
+          <video src="/videogaleri/peringatanharinasional/hardiknas/hg2.mp4" controls className="w-[565px]" />
         </div>
 
         <div className="mt-16 mx-8 md:mx-0 bg-[#EC901D] flex justify-center items-center w-[50px] h-[50px] rounded-full cursor-pointer ">
