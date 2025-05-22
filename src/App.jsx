@@ -16,6 +16,7 @@ import Team from "./pages/Team";
 import Kampanye from "./pages/Kampanye";
 import FormRelawan from "./pages/Daftarrelawan/formrelawan";
 import SuccessPage from "./pages/Daftarrelawan/successpage";
+import SyaratPage from "./pages/Daftarsiswa/syarat";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/galeri" element={<Galeri />} />
         <Route path="/detail/:id" element={<DetailPage />} />
         <Route path="/daftarsiswa" element={<DaftarSiswa />} />
+        <Route path="/syaratdaftarsiswa" element={<SyaratPage />} />
         <Route path="/daftarrelawan" element={<DaftarRelawan />} />
         <Route path="/daftarkolaborasi" element={<DaftarKolaborasi />} />
         <Route path="/donasiberkala" element={<DonasiBerkala />} />

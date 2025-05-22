@@ -87,7 +87,7 @@ function DesktopNavbar() {
             <ul className="absolute mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-[12px] p-2 space-y-2 z-50 w-40 hidden group-open:block">
               <li>
                 <Link
-                  to="/daftarsiswa"
+                  to="/syaratdaftarsiswa"
                   className="block px-3 py-2 text-[#00000080] hover:bg-[#5EC2C2] hover:text-white rounded-[12px]"
                 >
                   Daftar Siswa

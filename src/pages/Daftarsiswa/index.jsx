@@ -1,24 +1,102 @@
-import Footer from "@/components/Footer";
-import Hero from "../../components/Hero";
-import React, { Suspense } from "react";
-import Spinner from "@/components/Spinner";
+import { useState } from "react";
+import Stepper from "@/components/Stepper";
+import Step1DataDiri from "@/components/DaftarSiswa/Step1DataDiri";
+import Step2IdentitasOrangTua from "@/components/DaftarSiswa/Step2IdentitasOrangTua";
+import Step3Darurat from "@/components/DaftarSiswa/Step3Darurat";
 
-const Syarat = React.lazy(() => import("./syarat"));
+function FormPendaftaran() {
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    // Data Diri
+    nama: "",
+    jenisKelamin: "",
+    tempatLahir: "",
+    tanggalLahir: "",
+    umur: "",
+    nik: "",
+    tingkat: "",
+    kelas: "",
+    kelasTerakhir: "",
+    statusKeluarga: "",
+    alamatLengkap: "",
+    statusTempatTinggal: "",
+    kwhListrik: "",
+    riwayatPenyakit: "",
+    alasanSekolah: "",
 
-function DaftarSiswa() {
+    // Identitas Orang Tua
+    ibuNama: "",
+    ibuAgama: "",
+    ibuPendidikan: "",
+    ibuPekerjaan: "",
+    ibuPenghasilan: "",
+    ibuRiwayatPenyakit: "",
+    ibuAlamat: "",
+    ibuHp: "",
+    waliNama: "",
+    waliAgama: "",
+    waliPendidikan: "",
+    waliPekerjaan: "",
+    waliPenghasilan: "",
+    waliRiwayatPenyakit: "",
+    waliAlamat: "",
+    waliHp: "",
+
+    // Kontak Darurat
+    daruratNama: "",
+    daruratHubungan: "",
+    daruratAlamat: "",
+    daruratHp: "",
+  });
+
+  const nextStep = () => setStep(step + 1);
+  const prevStep = () => setStep(step - 1);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
-    <>
-      <Hero
-        image="/icons/bg-daftarsiswa.png"
-        title="Menjadi Siswa Janji Baik "
-        description="Dapatkan pendidikan berkualitas untuk masa depan yang lebih cerah. Bergabunglah bersama kami dan nikmati fasilitas belajar lengkap, program pengembangan siswa, serta lingkungan belajar yang mendukung. "
-      />
-      <Suspense fallback={<Spinner />}>
-        <Syarat />
-      </Suspense>
-      <Footer />
-    </>
+    <div className="max-w-6xl mx-auto p-6">
+      <h1 className="text-center my-16 text-[32px] font-semibold text-[#01B4BB]">
+        Daftar Menjadi Siswa
+      </h1>
+
+      <div className="border-b-2 border-black mb-20">
+        <h1 className="text-xl font-semibold mb-6">
+          Form Pendaftaran Siswa Janji Baik
+        </h1>
+      </div>
+
+      <Stepper currentStep={step} />
+
+      {step === 1 && (
+        <Step1DataDiri
+          formData={formData}
+          handleChange={handleChange}
+          nextStep={nextStep}
+        />
+      )}
+      {step === 2 && (
+        <Step2IdentitasOrangTua
+          formData={formData}
+          handleChange={handleChange}
+          nextStep={nextStep}
+          prevStep={prevStep}
+        />
+      )}
+      {step === 3 && (
+        <Step3Darurat
+          formData={formData}
+          handleChange={handleChange}
+          prevStep={prevStep}
+        />
+      )}
+    </div>
   );
 }
 
-export default DaftarSiswa;
+export default FormPendaftaran;
