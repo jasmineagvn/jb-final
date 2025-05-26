@@ -5,7 +5,7 @@ function Step2IdentitasOrangTua({
   prevStep,
 }) {
   return (
-    <div className="w-[928px] mx-auto">
+    <div className="lg:w-[928px] w-full mx-auto">
       <h2 className="text-lg font-semibold mb-4 border-b-2 border-black pb-2">
         Identitas Ayah
       </h2>
@@ -41,7 +41,7 @@ function Step2IdentitasOrangTua({
         name="ayahPendidikan"
         value={formData.ayahPendidikan}
         onChange={handleChange}
-        className="w-[455px] border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
+        className="lg:w-[455px] w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
       >
         <option value="">Opsi Pilihan</option>
         <option value="Tidak Sekolah">Tidak Sekolah</option>
@@ -150,7 +150,7 @@ function Step2IdentitasOrangTua({
         name="ibuPendidikan"
         value={formData.ibuPendidikan}
         onChange={handleChange}
-        className="w-[455px] border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
+        className="lg:w-[455px] w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 text-[#12121299]"
         required
       >
         <option value="">Opsi Pilihan</option>
@@ -270,7 +270,7 @@ function Step2IdentitasOrangTua({
           name="waliPendidikan"
           value={formData.waliPendidikan}
           onChange={handleChange}
-          className="w-[455px] border border-gray-500 p-2 rounded-[12px] px-5 py-4 text-[#12121299]"
+          className="lg:w-[455px] w-full border border-gray-500 p-2 rounded-[12px] px-5 py-4 text-[#12121299]"
           required
         >
           <option value="">Opsi Pilihan</option>

@@ -1,5 +1,5 @@
 const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
-  <div className="w-[928px] mx-auto">
+  <div className="lg:w-[928px] w-full mx-auto">
     <label className="block mb-2 text-[#12121299] font-semibold">
       Nama Lengkap <span className="text-red-600">*</span>
     </label>
@@ -19,7 +19,7 @@ const Step1DataDiri = ({ formData, handleChange, nextStep }) => (
       name="jenisKelamin"
       value={formData.jenisKelamin}
       onChange={handleChange}
-      className="border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 w-[455px] text-[#12121299]"
+      className="border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4 lg:w-[455px] w-full text-[#12121299]"
     >
       <option value="">Opsi Pilihan</option>
       <option value="Laki-laki">Laki-laki</option>

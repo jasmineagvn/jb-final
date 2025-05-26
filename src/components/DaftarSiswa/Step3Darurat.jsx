@@ -1,6 +1,6 @@
 function Step3Darurat({ formData, handleChange, handleSubmit }) {
   return (
-    <div className="w-[928px] mx-auto space-y-[15px]">
+    <div className="lg:w-[928px] w-full mx-auto space-y-[15px]">
       <h2 className="text-xl font-semibold border-b-2 border-black mb-5 pb-4">
         Isi Kontak Darurat dengan Keluarga Terdekat yang Tidak Tinggal Serumah
       </h2>

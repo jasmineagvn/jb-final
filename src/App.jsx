@@ -3,8 +3,6 @@ import HomePage from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import TentangKami from "./pages/TentangKami";
 import JbOnNews from "./pages/jbonnews"
-import Galeri from "./pages/Galeri";
-import DetailPage from "./components/Gallery/detailpage";
 import DaftarSiswa from "./pages/Daftarsiswa";
 import DaftarRelawan from "./pages/Daftarrelawan";
 import DaftarKolaborasi from "./pages/Daftarkolaborasi";
@@ -22,6 +20,8 @@ import FormBercerita from "./pages/Program/formbercerita";
 import SuccessPageBercerita from "./pages/Program/successpage";
 import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
 import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
+import GaleriList from "./pages/Galeri/galeri";
+import GaleriDetail from "./pages/Galeri/GaleriDetail";
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/jbonnews"  element={<JbOnNews />}/>
-        <Route path="/galeri" element={<Galeri />} />
-        <Route path="/detail/:id" element={<DetailPage />} />
+        <Route path="/galeri" element={<GaleriList />} />
+        <Route path="/galeri/:id" element={<GaleriDetail />} />
         <Route path="/daftarsiswa" element={<DaftarSiswa />} />
         <Route path="/syaratdaftarsiswa" element={<SyaratPage />} />
         <Route path="/daftarrelawan" element={<DaftarRelawan />} />
