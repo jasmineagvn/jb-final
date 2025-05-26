@@ -20,7 +20,7 @@ import FormBercerita from "./pages/Program/formbercerita";
 import SuccessPageBercerita from "./pages/Program/successpage";
 import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
 import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
-import GaleriList from "./pages/Galeri/galeri";
+import GaleriList from "./pages/Galeri/Galeri";
 import GaleriDetail from "./pages/Galeri/GaleriDetail";
 
 function App() {
