@@ -13,6 +13,7 @@ const galeriData = [
       "/icons/kegiatanbelajar/kbm3.png",
       "/icons/kegiatanbelajar/kbm4.png",
       "/icons/kegiatanbelajar/kbm5.png",
+      "/icons/kegiatanbelajar/kbm5.png",
     ],
   },
   {
