@@ -45,6 +45,7 @@ function GaleriList() {
               src={galeri.thumbnail}
               alt={galeri.title}
               className="w-full h-[300px] object-cover"
+              loading="lazy"
             />
             <div className="flex w-full justify-between items-center">
               <p className="text-sm text-gray-600 font-bold">{galeri.title}</p>

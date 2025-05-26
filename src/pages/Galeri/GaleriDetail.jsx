@@ -57,6 +57,7 @@ function GaleriDetail() {
               src={img}
               alt={`Galeri Gambar ${idx + 1}`}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           ))}
           {videos.map((video, idx) => (
@@ -64,6 +65,7 @@ function GaleriDetail() {
               key={idx}
               controls
               className="w-full"
+              preload="metadata"
               alt={`Galeri Video ${idx + 1}`}
             >
               <source src={video} type="video/mp4" />
