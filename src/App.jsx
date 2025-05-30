@@ -20,8 +20,8 @@ import FormBercerita from "./pages/Program/formbercerita";
 import SuccessPageBercerita from "./pages/Program/successpage";
 import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
 import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
-import GaleriList from "./pages/Galeri/Galeri";
-import GaleriDetail from "./pages/Galeri/GaleriDetail";
+import GaleriPage from "./pages/Galeri/GaleriPage";
+import GaleriDetailPage from "./pages/Galeri/GaleriDetailPage";
 
 function App() {
   return (
@@ -31,8 +31,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/jbonnews"  element={<JbOnNews />}/>
-        <Route path="/galeri" element={<GaleriList />} />
-        <Route path="/galeri/:id" element={<GaleriDetail />} />
+        <Route path="/galeri" element={<GaleriPage />} />
+        <Route path="/galeri/:id" element={<GaleriDetailPage />} />
         <Route path="/daftarsiswa" element={<DaftarSiswa />} />
         <Route path="/syaratdaftarsiswa" element={<SyaratPage />} />
         <Route path="/daftarrelawan" element={<DaftarRelawan />} />

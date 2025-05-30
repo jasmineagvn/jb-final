@@ -19,7 +19,7 @@ const galeriData = [
   {
     id: 2,
     title: "Pesta Ide Relawan",
-    thumbnail: "/icons/PestaIdeRelawan/gambar1.png",
+    thumbnail: "/icons/PestaIdeRelawan/bg-galleri.jpg",
     description:
       "Setiap gambar menyimpan kisah semangat dan kolaborasi. Inilah momen-momen seru dan penuh ide yang telah kami rayakan bersama. Mari terus menyalakan inspirasi dan bergerak bersama untuk perubahan",
     category: "pestaiderelawan",
