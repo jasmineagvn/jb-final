@@ -1,12 +1,11 @@
-import GaleriListViews from "@/components/GaleriViews/Galeri"
-
+import GaleriListViews from "@/components/GaleriViews/Galeri";
 
 function GaleriPage() {
   return (
     <div>
-        <GaleriListViews />
+      <GaleriListViews />
     </div>
-  )
+  );
 }
 
-export default GaleriPage
+export default GaleriPage;

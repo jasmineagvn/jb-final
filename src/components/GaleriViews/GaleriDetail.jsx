@@ -35,18 +35,16 @@ function GaleriDetailViews() {
         description={galeri.description}
         brightness="brightness-40"
       />
-      <div className="flex justify-between items-center mt-9">
-        <h1 className="lg:text-2xl text-xl font-semibold md:pl-14 pl-5">
-          Jejak Kebaikan dalam Setiap Momen
-        </h1>
+      <div className="flex justify-between items-center mb-15 mt-20">
+        <h1 className="text-3xl pl-5 md:pl-12 font-bold whitespace-nowrap">Jejak Kebaikan Dalam Setiap Momen</h1>
         <img
-          src="/icons/garis-news.png hidden lg:block"
+          src="/icons/garis-news.png"
           alt=""
-          className="w-[50%]"
+          className="w-[55%] h-1 hidden md:block"
         />
       </div>
       <div className="max-w-6xl mx-auto mt-9 px-5 lg:px-0">
-        <h1 className="text-base font-semibold text-[#01B4BB] border-b-2 pb-5 border-black">
+        <h1 className="text-base font-bold text-[#01B4BB] border-b-2 pb-5 border-black">
           {galeri.title}
         </h1>
       </div>

@@ -61,7 +61,7 @@ function FormPendaftaran() {
 
   return (
     <div className="max-w-6xl mx-auto p-6">
-      <h1 className="text-center my-8 text-[32px] font-semibold text-[#01B4BB]">
+      <h1 className="text-center my-8 text-[32px] font-bold text-[#01B4BB]">
         Daftar Menjadi Siswa
       </h1>
 

@@ -22,11 +22,14 @@ import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
 import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
 import GaleriPage from "./pages/Galeri/GaleriPage";
 import GaleriDetailPage from "./pages/Galeri/GaleriDetailPage";
+import ScrollToTop from "./components/ScrollToTop";
+import Detail from "./pages/Kampanye/detail";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tentangkami" element={<TentangKami />} />
@@ -50,6 +53,7 @@ function App() {
         <Route path="/successpagebercerita" element={<SuccessPageBercerita />} />
         <Route path="/formberkalabaik" element={<FormBerkalaBaik />} />
         <Route path="/successpageberkalabaik" element={<SuccessPageBerkalaBaik />} />
+        <Route path="/kampanye/:id" element={<Detail />} />
       </Routes>
     </>
   );

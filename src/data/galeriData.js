@@ -8,12 +8,10 @@ const galeriData = [
     category: "kegiatanbelajar",
     createdAt: "2025-05-20",
     images: [
-      "/icons/kegiatanbelajar/kbm1.png",
-      "/icons/kegiatanbelajar/kbm2.png",
-      "/icons/kegiatanbelajar/kbm3.png",
-      "/icons/kegiatanbelajar/kbm4.png",
-      "/icons/kegiatanbelajar/kbm5.png",
-      "/icons/kegiatanbelajar/kbm5.png",
+      "/videogaleri/KBM/b1.mp4",
+      "/videogaleri/KBM/b3.mp4",
+      "/videogaleri/KBM/b4.mp4",
+      "/videogaleri/KBM/b5.mp4",
     ],
   },
   {
@@ -58,7 +56,7 @@ const galeriData = [
   {
     id: 4,
     title: "Graduation Siswa Janji Baik",
-    thumbnail: "/icons/GraduationSiswa/bg-galeri.png",
+    thumbnail: "/icons/GraduationSiswa/bg-card.jpg",
     description:
       "Setiap gambar menangkap langkah besar menuju masa depan. Inilah momen kelulusan yang penuh haru, bangga, dan harapan. Mari rayakan akhir yang indah dan awal dari perjalanan baru yang menjanjikan!",
     createdAt: "2025-05-19",
@@ -74,7 +72,7 @@ const galeriData = [
   {
     id: 5,
     title: "Kelas Kreasi",
-    thumbnail: "/icons/KelasKreasi/bg-galleri.png",
+    thumbnail: "/icons/KelasKreasi/bg-card.jpg",
     description:
       "Setiap gambar adalah bukti bahwa imajinasi bisa diwujudkan. Inilah keseruan di kelas kreasi—tempat tawa, warna, dan ide-ide luar biasa bertemu. Mari terus berkarya dan tumbuhkan kreativitas bersama!",
     createdAt: "2025-05-19",
@@ -98,7 +96,7 @@ const galeriData = [
   {
     id: 6,
     title: "Peringatan Hari Nasional",
-    thumbnail: "/icons/PeringatanNasional/bg-galeri.png",
+    thumbnail: "/icons/PeringatanNasional/bg-card.jpg",
     description:
       "Setiap gambar mengabadikan tekad kami untuk terus menepati Janji Baik bagi bangsa. Dalam semangat Hari Nasional, kami merayakan kebersamaan, mengenang perjuangan, dan melangkah maju demi Indonesia yang lebih baik.",
     createdAt: "2025-05-19",
@@ -109,8 +107,8 @@ const galeriData = [
       "/icons/PeringatanNasional/gambar4.png",
       "/icons/PeringatanNasional/gambar5.png",
       "/videogaleri/peringatanharinasional/agustusan/179.mp4",
-      "/icons/PeringatanNasional/gambar8.png",
-      "/icons/PeringatanNasional/gambar8.png",
+      "/videogaleri/peringatanharinasional/agustusan/1710.mp4",
+      "/icons/PeringatanNasional/gambar6.png",
       "/videogaleri/peringatanharinasional/hardiknas/hardiknas1.mp4",
       "/videogaleri/peringatanharinasional/hardiknas/hg2.mp4",
     ],
@@ -118,7 +116,7 @@ const galeriData = [
   {
     id: 7,
     title: "Pengabdian Kepada Masyarakat",
-    thumbnail: "/icons/pkmgaleri/bg-pkm.png",
+    thumbnail: "/icons/pkmgaleri/bg-card.jpg",
     description:
       "Setiap gambar merekam kolaborasi penuh makna antara Janji Baik dan program Pengabdian kepada Masyarakat di berbagai kampus. Bersama, kami menghadirkan aksi nyata, belajar dari masyarakat, dan menepati janji untuk terus membawa kebaikan yang berdampak.",
     createdAt: "2025-05-19",
@@ -128,6 +126,66 @@ const galeriData = [
       "/icons/pkmgaleri/gambar3.png",
       "/videogaleri/PKM/untirta1.mp4",
       "/videogaleri/PKM/untirta2.mp4",
+    ],
+  },
+   {
+    id: 8,
+    title: "Janji Baik Berkelana",
+    thumbnail: "/icons/berkelanagaleri/bg-card.jpg",
+    description:
+      "Setiap gambar merekam kolaborasi penuh makna antara Janji Baik dan program Pengabdian kepada Masyarakat di berbagai kampus. Bersama, kami menghadirkan aksi nyata, belajar dari masyarakat, dan menepati janji untuk terus membawa kebaikan yang berdampak.",
+    createdAt: "2025-05-19",
+    images: [
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
+   {
+    id: 9,
+    title: "Catatan Akhir Kebaikan",
+    thumbnail: "/icons/catatangaleri/bg-card.jpg",
+    description:
+      "Setiap gambar merekam kolaborasi penuh makna antara Janji Baik dan program Pengabdian kepada Masyarakat di berbagai kampus. Bersama, kami menghadirkan aksi nyata, belajar dari masyarakat, dan menepati janji untuk terus membawa kebaikan yang berdampak.",
+    createdAt: "2025-05-19",
+    images: [
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
+   {
+    id: 10,
+    title: "Workshop Siswa",
+    thumbnail: "/icons/workshopgaleri/bg-card.jpg",
+    description:
+      "Setiap gambar merekam kolaborasi penuh makna antara Janji Baik dan program Pengabdian kepada Masyarakat di berbagai kampus. Bersama, kami menghadirkan aksi nyata, belajar dari masyarakat, dan menepati janji untuk terus membawa kebaikan yang berdampak.",
+    createdAt: "2025-05-19",
+    images: [
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
+   {
+    id: 11,
+    title: "Bulan Baik Berbagi Takjil",
+    thumbnail: "/icons/bulanbaikgaleri/bg-card.png",
+    description:
+      "Setiap gambar merekam kolaborasi penuh makna antara Janji Baik dan program Pengabdian kepada Masyarakat di berbagai kampus. Bersama, kami menghadirkan aksi nyata, belajar dari masyarakat, dan menepati janji untuk terus membawa kebaikan yang berdampak.",
+    createdAt: "2025-05-19",
+    images: [
+      "",
+      "",
+      "",
+      "",
+      "",
     ],
   },
 ];

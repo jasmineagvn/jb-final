@@ -115,18 +115,16 @@ const FormRelawan = () => {
   };
 
   return (
-    <div className="relative p-4 mx-auto">
-      <h1 className="text-center text-[40px] font-bold text-[#01B4BB] mb-10">
+    <div className="max-w-6xl mx-auto p-6">
+      <h1 className="text-center my-8 text-[32px] font-bold text-[#01B4BB]">
         Daftar Menjadi Relawan
       </h1>
 
-      <div className="mx-auto">
-        <h2 className="text-[25px] font-bold mb-2">
+      <div className="border-b-2 border-black mb-20">
+        <h1 className="text-xl font-semibold mb-6">
           Form Pendaftaran Relawan Janji Baik
-        </h2>
+        </h1>
       </div>
-
-      <div className="h-1 bg-black w-[1240px] mb-15" />
 
       <form
         onSubmit={handleSubmit}
