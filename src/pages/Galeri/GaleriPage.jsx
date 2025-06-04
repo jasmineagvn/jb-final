@@ -1,10 +1,15 @@
-import GaleriListViews from "@/components/GaleriViews/Galeri";
+import Spinner from "@/components/Spinner";
+import React, { Suspense } from "react";
+
+
+const GaleriListViews = React.lazy(() => import("@/components/GaleriViews/Galeri"));
+
 
 function GaleriPage() {
   return (
-    <div>
+    <Suspense fallback={<Spinner />}>
       <GaleriListViews />
-    </div>
+    </Suspense>
   );
 }
 

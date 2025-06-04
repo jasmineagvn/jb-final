@@ -1,11 +1,13 @@
-import GaleriDetailViews from "@/components/GaleriViews/GaleriDetail";
-import React from "react";
+import Spinner from "@/components/Spinner";
+import React, { Suspense } from "react";
+
+const GaleriDetailViews = React.lazy(() => import("@/components/GaleriViews/GaleriDetail"));
 
 function GaleriDetailPage() {
   return (
-    <div>
+    <Suspense fallback={<Spinner />}>
       <GaleriDetailViews />
-    </div>
+    </Suspense>
   );
 }
 
