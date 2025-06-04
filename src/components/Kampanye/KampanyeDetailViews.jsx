@@ -1,15 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import campaigns from "./data";
+import campaigns from "@/data/kampanyeDetailData"; 
 
-const Detail = () => {
+const KampanyeDetailViews = () => {
   const { id } = useParams();
-  const campaign = campaigns.find((c) => c.id === parseInt(id));
-
+  const campaign = campaigns.find((c) => c.id === id);
   if (!campaign) return <p>Kampanye tidak ditemukan.</p>;
 
   return (
-    <div className="p-6 max-w-4xl mx-auto space-y-6">
+    <div className="p-6 max-w-6xl mx-auto space-y-6">
       {/* Gambar utama dan judul */}
       <div>
         <img
@@ -19,19 +18,16 @@ const Detail = () => {
         />
         <h1 className="text-2xl font-semibold mt-4">{campaign.title}</h1>
         <div className="text-blue-600 font-bold mt-2">
-          Rp. {campaign.collected.toLocaleString()}{" "}
+          Rp{campaign.collected.toLocaleString()}{" "}
           <span className="text-gray-600 font-normal">
-            terkumpul dari Rp. {campaign.target.toLocaleString()}
+            dari Rp{campaign.target.toLocaleString()}
           </span>
         </div>
         <div className="w-full bg-gray-200 h-2 rounded mt-2">
           <div
             className="bg-blue-500 h-2 rounded"
             style={{
-              width: `${Math.min(
-                (campaign.collected / campaign.target) * 100,
-                100
-              )}%`,
+              width: `${Math.min((campaign.collected / campaign.target) * 100, 100)}%`,
             }}
           ></div>
         </div>
@@ -41,16 +37,18 @@ const Detail = () => {
       {/* Cerita */}
       <div>
         <h2 className="text-xl font-semibold mb-2">Cerita</h2>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {campaign.storyImages.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt="Cerita"
-              className="w-1/4 rounded shadow"
-            />
-          ))}
-        </div>
+        {campaign.storyImages.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {campaign.storyImages.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Cerita ${idx + 1}`}
+                className="w-1/4 rounded shadow"
+              />
+            ))}
+          </div>
+        )}
         <p className="text-gray-800 whitespace-pre-line">{campaign.description}</p>
       </div>
 
@@ -61,23 +59,19 @@ const Detail = () => {
           <p>
             Donasi dapat ditransferkan melalui:
             <br />
-            <span className="font-semibold">8991 - 3161 - 91</span>
+            <span className="font-semibold">{campaign.bankAccount.number}</span>
             <br />
-            a.n Yayasan Baik Media Indonesia
+            a.n {campaign.bankAccount.accountName}
             <br />
             <span className="text-blue-600 font-bold">
-              Kode Unik : "{campaign.uniqueCode}"
+              Kode Unik : "{campaign.bankAccount.uniqueCode}"
             </span>
             <br />
             <span className="text-sm text-gray-500">
               Tambahkan kode unik di akhir nominal donasi
             </span>
           </p>
-          <img
-            src="/icons/bca.png"
-            alt="BCA"
-            className="w-20 mt-4"
-          />
+          <img src="/icons/bca.png" alt="BCA" className="w-20 mt-4" />
         </div>
       </div>
 
@@ -88,4 +82,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default KampanyeDetailViews;

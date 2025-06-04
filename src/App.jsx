@@ -11,7 +11,6 @@ import DonasiBerkala from "./pages/Donasiberkala";
 import DonasiUmum from "./pages/Donasiumum";
 import Program from "./pages/Program";
 import Team from "./pages/Team";
-import Kampanye from "./pages/Kampanye";
 import FormRelawan from "./pages/Daftarrelawan/formrelawan";
 import SuccessPage from "./pages/Daftarrelawan/successpage";
 import SyaratPage from "./pages/Daftarsiswa/syarat";
@@ -22,8 +21,9 @@ import FormBerkalaBaik from "./pages/Donasiberkala/formberkalabaik";
 import SuccessPageBerkalaBaik from "./pages/Donasiberkala/successpage";
 import GaleriPage from "./pages/Galeri/GaleriPage";
 import GaleriDetailPage from "./pages/Galeri/GaleriDetailPage";
+import KampanyePage from "./pages/Kampanye/KampanyePage";
 import ScrollToTop from "./components/ScrollToTop";
-import Detail from "./pages/Kampanye/detail";
+import KampanyeDetail from "./pages/Kampanye/KampanyeDetail";
 
 function App() {
   return (
@@ -45,7 +45,8 @@ function App() {
         <Route path="/kontakkami" element={<KontakKami />} />
         <Route path="/program" element={<Program />} /> 
         <Route path="/team" element={<Team />} />
-        <Route path="/kampanye" element={<Kampanye />} />
+        <Route path="/kampanye" element={<KampanyePage />} />
+        <Route path="/kampanye/:id" element={<KampanyeDetail />} />
         <Route path="/formrelawan" element={<FormRelawan />} />
         <Route path="/successpage" element={<SuccessPage />} />
         <Route path="/jbbercerita" element={<JbBercerita />} />
@@ -53,7 +54,7 @@ function App() {
         <Route path="/successpagebercerita" element={<SuccessPageBercerita />} />
         <Route path="/formberkalabaik" element={<FormBerkalaBaik />} />
         <Route path="/successpageberkalabaik" element={<SuccessPageBerkalaBaik />} />
-        <Route path="/kampanye/:id" element={<Detail />} />
+        {/* <Route path="/kampanye/:id" element={<Detail />} /> */}
       </Routes>
     </>
   );
