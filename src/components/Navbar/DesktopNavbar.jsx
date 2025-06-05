@@ -23,14 +23,14 @@ function DesktopNavbar() {
     <div className="hidden md:flex" ref={navbarRef}>
       <ul className="flex gap-10 items-center">
         <li>
-          <Link to="/" className="text-gray-500 dark:text-white">
+          <Link to="/" className="text-gray-500 dark:text-white hover:text-[#5EC2C2]">
             Beranda
           </Link>
         </li>
 
         {/* Tentang Kami */}
         <li className="relative">
-          <div className="flex items-center gap-2 text-gray-500 dark:text-white">
+          <div className="flex items-center gap-2 text-gray-500 dark:text-white hover:text-[#5EC2C2]">
             <Link to="/tentangkami">
               Tentang Kami
             </Link>
@@ -88,7 +88,7 @@ function DesktopNavbar() {
         <li className="relative">
           <button
             onClick={() => toggleDropdown("daftar")}
-            className="flex items-center gap-2 text-gray-500 dark:text-white cursor-pointer"
+            className="flex items-center gap-2 text-gray-500 dark:text-white cursor-pointer hover:text-[#5EC2C2]"
           >
             Daftar
             <svg
@@ -139,7 +139,7 @@ function DesktopNavbar() {
         <li>
           <Link
             to="/program"
-            className="text-gray-500 dark:text-white cursor-pointer"
+            className="text-gray-500 dark:text-white cursor-pointer hover:text-[#5EC2C2]"
           >
             Program
           </Link>
@@ -149,7 +149,7 @@ function DesktopNavbar() {
         <li className="relative">
           <button
             onClick={() => toggleDropdown("donasi")}
-            className="flex items-center gap-2 text-gray-500 dark:text-white cursor-pointer"
+            className="flex items-center gap-2 text-gray-500 dark:text-white cursor-pointer hover:text-[#5EC2C2]"
           >
             Donasi
             <svg
@@ -200,7 +200,7 @@ function DesktopNavbar() {
         <li>
           <Link
             to="/kontakkami"
-            className="text-gray-500 dark:text-white cursor-pointer"
+            className="text-gray-500 dark:text-white cursor-pointer hover:text-[#5EC2C2]"
           >
             Kontak Kami
           </Link>

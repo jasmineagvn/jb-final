@@ -10,7 +10,7 @@ function Daftar() {
         yang Lebih Cerah?
       </h1>
       <Link to="/formrelawan">
-        <button className="bg-[#EC901D] text-white px-6 py-2 w-[250px] h-[50px] mt-10 rounded-full hover:bg-orange-600 transition">Daftar Sebagai Relawan</button>
+        <button className="bg-[#EC901D] text-white px-6 py-2 w-[250px] h-[50px] mt-10 rounded-full hover:bg-orange-600 transition cursor-pointer">Daftar Sebagai Relawan</button>
       </Link>
     </div>
   );

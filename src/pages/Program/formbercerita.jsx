@@ -170,7 +170,7 @@ export default function FormBercerita() {
 
           <div className="text-right">
             <Link to="/successpagebercerita">
-              <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition">
+              <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition cursor-pointer">
                 Kirim
               </button>
             </Link>

@@ -6,7 +6,7 @@ const Card = ({ icon, title, description, button }) => (
     <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 flex-1 text-center">
       {description}
     </p>
-    <button className="bg-[#EC901D] text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">
+    <button className="bg-[#EC901D] text-white px-6 py-2 rounded-full hover:bg-orange-600 transition cursor-pointer">
       {button}
     </button>
   </div>

@@ -46,18 +46,33 @@ const Muatan = () => {
   return (
     <div className="text-center py-12 px-4 mt-18">
       <h2 className="text-2xl font-semibold">Muatan Belajar Non-Akademik</h2>
-      <div className="flex flex-wrap justify-center gap-6 mt-[80px]">
-        {cards.map((card, index) => (
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-[80px]">
+        {cards.slice(0, 4).map((card, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-[#3C3F41] flex flex-col w-full px-5 lg:px-0 lg:w-[250px] h-[300px] shadow-lg py-14"
+            className="bg-white dark:bg-[#3C3F41] flex flex-col w-full h-[300px] shadow-lg px-5 py-14"
           >
             <img src={card.image} alt="" className="mx-auto mb-4" />
-            <h2 className="font-bold text-xl mb-2">{card.title} </h2>
+            <h2 className="font-bold text-xl mb-2">{card.title}</h2>
             <p className="text-sm">{card.description}</p>
           </div>
         ))}
       </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-6">
+        {cards.slice(4).map((card, index) => (
+          <div
+            key={index + 4} // agar key tetap unik
+            className="bg-white dark:bg-[#3C3F41] flex flex-col w-full h-[300px] shadow-lg px-5 py-14"
+          >
+            <img src={card.image} alt="" className="mx-auto mb-4" />
+            <h2 className="font-bold text-xl mb-2">{card.title}</h2>
+            <p className="text-sm">{card.description}</p>
+          </div>
+        ))}
+      </div>
+
       <div className="relative w-full h-2 flex justify-end">
         <div className="relative w-[600px] h-2 mt-22">
           <div className="absolute top-1/2 left-0 w-full h-1 bg-orange-400 transform -translate-y-1/2"></div>

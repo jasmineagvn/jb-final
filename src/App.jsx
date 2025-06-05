@@ -54,7 +54,6 @@ function App() {
         <Route path="/successpagebercerita" element={<SuccessPageBercerita />} />
         <Route path="/formberkalabaik" element={<FormBerkalaBaik />} />
         <Route path="/successpageberkalabaik" element={<SuccessPageBerkalaBaik />} />
-        {/* <Route path="/kampanye/:id" element={<Detail />} /> */}
       </Routes>
     </>
   );

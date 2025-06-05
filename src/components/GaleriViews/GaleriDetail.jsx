@@ -35,7 +35,7 @@ function GaleriDetailViews() {
         description={galeri.description}
         brightness="brightness-40"
       />
-      <div className="flex justify-between items-center mb-15 mt-20">
+      <div className="flex justify-between items-center mb-15 mt-20 ">
         <h1 className="text-3xl pl-5 md:pl-12 font-bold whitespace-nowrap">Jejak Kebaikan Dalam Setiap Momen</h1>
         <img
           src="/icons/garis-news.png"

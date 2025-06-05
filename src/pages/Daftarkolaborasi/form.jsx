@@ -96,7 +96,7 @@ const FormKolaborasi = () => {
           <div className="flex justify-end pt-4">
             <button
               type="submit"
-              className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full w-[127px]"
+              className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full w-[127px] cursor-pointer"
             >
               Kirim
             </button>

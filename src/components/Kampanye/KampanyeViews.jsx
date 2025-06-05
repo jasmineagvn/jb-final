@@ -26,7 +26,11 @@ function KampanyeViews() {
             key={item.id}
             className="flex lg:flex-row flex-col bg-white shadow-jb gap-14 w-full p-6 rounded-2xl"
           >
-            <img src={item.image} alt={item.title} className="w-full lg:w-[300px] rounded-xl" />
+            <img
+              src={item.image}
+              alt={item.title}
+              className="aspect-video w-full lg:w-[300px] object-cover rounded-xl"
+            />
             <div className="p-4 flex-1">
               <p className="text-sm text-[#01B4BB] font-medium mb-1">
                 {item.tag}

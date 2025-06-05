@@ -67,13 +67,11 @@ function Step3Darurat({ formData, handleChange, handleSubmit }) {
       </div>
 
       <div className="flex justify-end">
-        <button
-          type="button"
-          onClick={handleSubmit}
-          className="bg-[#EC901D] text-white px-16 py-2 rounded-full "
-        >
-          Kirim
-        </button>
+        <Link to="/successpagesiswa">
+            <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition">
+              Kirim
+            </button>
+        </Link>
       </div>
     </div>
   );

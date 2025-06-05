@@ -83,7 +83,7 @@ export default function Manfaat() {
           Sebaran Siswa & Relawan Janji Baik di Indonesia
         </h1>
         <div className="bg-[#A9EAED] py-8 px-8 rounded-full flex justify-center items-center">
-          <h1 className="text-[50px] text-orange-500 font-semibold">141</h1>
+          <h1 className="text-[50px] text-[#EC901D] font-semibold">141</h1>
         </div>
         <p className="text-base text-slate-500">Tahun Pelajaran 2022/2023</p>
       </div>
@@ -101,7 +101,7 @@ export default function Manfaat() {
               Total Data Penerima Manfaat (2022/2023)
             </h1>
             <div className="bg-[#A9EAED] py-8 px-7 rounded-full flex justify-center items-center">
-              <h1 className="text-2xl text-orange-500 font-semibold">573</h1>
+              <h1 className="text-2xl text-[#EC901D] font-semibold">573</h1>
             </div>
             <p className="text-base text-slate-500 text-center">
               (pemberdayaan & sekolah gratis)

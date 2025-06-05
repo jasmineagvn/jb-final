@@ -83,18 +83,18 @@ function Berita() {
   return (
     <div className="mt-16">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl pl-5 md:pl-12 font-semibold">Berita Terbaru</h1>
+        <h1 className="text-3xl pl-5 md:pl-12 font-bold">Berita Terbaru</h1>
         <img
           src="/icons/garis-news.png"
           alt=""
-          className="w-[70%] hidden md:block"
+          className="w-[80%] hidden md:block"
         />
       </div>
 
-      <div className="max-w-6xl mt-12 bg-[#A9EAED] rounded-3xl mx-5 md:mx-auto">
+      <div className="max-w-7xl mt-12 bg-[#A9EAED] rounded-3xl mx-5 md:mx-auto">
         <div className="flex flex-wrap justify-center gap-10 px-9 py-16">
           {beritaCard.map((items, index) => (
-            <div key={index} className="flex flex-col gap-4 w-[300px] bg-white px-4 py-5  rounded-2xl">
+            <div key={index} className="flex flex-col gap-4 w-[350px] bg-white px-4 py-5  rounded-2xl">
               <img src={items.image} alt="" />
               <h1 className="text-lg text-[#063FFB] font-semibold leading-snug">
                 <a

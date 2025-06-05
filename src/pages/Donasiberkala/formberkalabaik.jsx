@@ -219,7 +219,7 @@ const FormBerkalaBaik = () => {
         {/* Tombol */}
         <div className="text-right">
           <Link to="/successpageberkalabaik">
-            <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition">
+            <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition cursor-pointer">
               Kirim
             </button>
           </Link>

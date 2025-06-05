@@ -12,7 +12,7 @@ const Konseling = lazy(() => import("./konseling"));
 const Muatan = lazy(() => import("./muatan"));
 const Divisi = lazy(() => import("./divisi"));
 const Sistem = lazy(() => import("./sistem"));
-const Undang = lazy(() => import("./udang"));
+const Undang = lazy(() => import("./undang"));
 
 function TentangKami() {
   return (

@@ -48,7 +48,7 @@ const ContactForm = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full w-[187px]"
+              className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full w-[187px] cursor-pointer"
             >
               Kirim Pesan
             </button>

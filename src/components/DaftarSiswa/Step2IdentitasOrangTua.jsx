@@ -362,7 +362,7 @@ function Step2IdentitasOrangTua({
       <div className="flex justify-end">
         <button
           onClick={nextStep}
-          className="bg-orange-500 text-white px-6 py-2 rounded-full"
+          className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full cursor-pointer"
         >
           Selanjutnya
         </button>
