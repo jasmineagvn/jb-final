@@ -14,6 +14,7 @@ import Team from "./pages/Team";
 import FormRelawan from "./pages/Daftarrelawan/formrelawan";
 import SuccessPage from "./pages/Daftarrelawan/successpage";
 import SyaratPage from "./pages/Daftarsiswa/syarat";
+import SuccessPageSiswa from "./pages/Daftarsiswa/successpage";
 import JbBercerita from "./pages/Program/jbbercerita";
 import FormBercerita from "./pages/Program/formbercerita";
 import SuccessPageBercerita from "./pages/Program/successpage";
@@ -34,10 +35,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/jbonnews"  element={<JbOnNews />}/>
-        <Route path="/galeri" element={<GaleriPage />} />
-        <Route path="/galeri/:id" element={<GaleriDetailPage />} />
+        <Route path="/galeri" element={<GaleriPage />} />        <Route path="/galeri/:id" element={<GaleriDetailPage />} />
         <Route path="/daftarsiswa" element={<DaftarSiswa />} />
         <Route path="/syaratdaftarsiswa" element={<SyaratPage />} />
+        <Route path="/successpagesiswa" element={<SuccessPageSiswa />} />
         <Route path="/daftarrelawan" element={<DaftarRelawan />} />
         <Route path="/daftarkolaborasi" element={<DaftarKolaborasi />} />
         <Route path="/donasiberkala" element={<DonasiBerkala />} />

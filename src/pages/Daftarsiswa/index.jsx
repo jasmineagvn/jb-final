@@ -87,8 +87,7 @@ function FormPendaftaran() {
           nextStep={nextStep}
           prevStep={prevStep}
         />
-      )}
-      {step === 3 && (
+      )}      {step === 3 && (
         <Step3Darurat
           formData={formData}
           handleChange={handleChange}
