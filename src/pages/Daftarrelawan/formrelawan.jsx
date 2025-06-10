@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const FormRelawan = () => {
+  // Tambahkan state untuk menyimpan data form
+  const [formData, setFormData] = useState({});
+
   const formFields = [
     {
       label: "Nama Lengkap",
@@ -109,9 +112,52 @@ const FormRelawan = () => {
     },
   ];
 
-  const handleSubmit = (e) => {
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzdJ-2xoMxBPAuYeTESuYn1Glmu-BWiS7JnSwUOAXtsXqw_vmE-nPKTw0voUQNp5doQ/exec';
+  
+  // handler untuk mengupdate formData ketika input berubah
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Form dikirim!");
+    
+    if (!formData.namaLengkap || !formData.namaPanggilan || !formData.tempatLahir || 
+        !formData.tanggalLahir || !formData.noHp || !formData.alamat || 
+        !formData.divisi || !formData.riwayatPendidikan || !formData.alasan || 
+        !formData.pengalaman || !formData.deskripsiPosisi || !formData.kesibukan) {
+      alert("Mohon lengkapi semua field yang wajib diisi!");
+      return;
+    }
+    
+    try {
+      const dataToSend = {
+        type: 'volunteer',
+        ...formData
+      };
+      
+      console.log('Sending volunteer data:', dataToSend);
+      
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataToSend)
+      });
+      
+      alert("Data relawan berhasil dikirim! Terima kasih telah bergabung.");
+      window.location.href = "/successpage";
+      
+    } catch (error) {
+      console.error('Error:', error);
+      alert("Terjadi kesalahan. Silakan coba lagi.");
+    }
   };
 
   return (
@@ -128,7 +174,7 @@ const FormRelawan = () => {
 
       <form
         onSubmit={handleSubmit}
-        className=" w-full max-w-[928px] mx-auto space-y-8"
+        className="w-full max-w-[928px] mx-auto space-y-8"
       >
         {formFields.map((field, index) => (
           <div key={index}>
@@ -139,6 +185,8 @@ const FormRelawan = () => {
             {field.type === "textarea" ? (
               <textarea
                 name={field.name}
+                value={formData[field.name] || ""}
+                onChange={handleChange}
                 required={field.required}
                 placeholder={field.placeholder}
                 className="w-full h-[56px] border-2 rounded-[12px] p-2"
@@ -146,6 +194,8 @@ const FormRelawan = () => {
             ) : field.type === "select" ? (
               <select
                 name={field.name}
+                value={formData[field.name] || ""}
+                onChange={handleChange}
                 required={field.required}
                 className="w-[455px] h-[56px] border-2 rounded-[12px] p-2 text-[#72717B]"
               >
@@ -160,6 +210,8 @@ const FormRelawan = () => {
               <input
                 type={field.type}
                 name={field.name}
+                value={formData[field.name] || ""}
+                onChange={handleChange}
                 required={field.required}
                 placeholder={field.placeholder}
                 className={`h-[56px] border-2 rounded-[12px] p-2 ${
@@ -171,11 +223,12 @@ const FormRelawan = () => {
         ))}
 
         <div className="text-right">
-          <Link to="/successpage">
-            <button className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition cursor-pointer">
-              Kirim
-            </button>
-          </Link>
+          <button 
+            type="submit"
+            className="bg-[#EC901D] text-white px-6 py-2 w-[161px] rounded-full hover:bg-orange-600 transition cursor-pointer"
+          >
+            Kirim
+          </button>
         </div>
       </form>
     </div>
