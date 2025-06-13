@@ -51,7 +51,7 @@ function Step3Darurat({ formData, handleChange, prevStep }) {
           value={formData.daruratNama || ""}
           onChange={handleChange}
           placeholder="Ketik Nama"
-          className="w-full p-3 border rounded"
+          className="w-full p-3 border rounded-[12px]"
           required
         />
       </div>
@@ -67,7 +67,7 @@ function Step3Darurat({ formData, handleChange, prevStep }) {
           value={formData.daruratHubungan || ""}
           onChange={handleChange}
           placeholder="Ketik Jawaban"
-          className="w-full p-3 border rounded"
+          className="w-full p-3 border rounded-[12px]"
           required
         />
       </div>
@@ -82,7 +82,7 @@ function Step3Darurat({ formData, handleChange, prevStep }) {
           value={formData.daruratAlamat || ""}
           onChange={handleChange}
           placeholder="Ketik Alamat"
-          className="w-full p-3 border rounded"
+          className="w-full p-3 border rounded-[12px]"
           required
         />
       </div>
@@ -97,10 +97,11 @@ function Step3Darurat({ formData, handleChange, prevStep }) {
           value={formData.daruratHp || ""}
           onChange={handleChange}
           placeholder="Ketik No.HP atau WhatsApp"
-          className="w-full p-3 border rounded"
+          className="w-full p-3 border rounded-[12px]"
           required
         />
-      </div>      <div className="flex justify-between mt-6">
+      </div>      
+      <div className="flex justify-between mt-6">
         <button
           type="button"
           onClick={prevStep}

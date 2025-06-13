@@ -133,17 +133,24 @@ function Step2IdentitasOrangTua({
       <label className="block mb-2 text-[#12121299] font-semibold">
         Agama <span className="text-red-600">*</span>
       </label>
-      <input
-        type="text"
-        name="ibuAgama"
-        value={formData.ibuAgama}
-        onChange={handleChange}
-        placeholder="Ketik Agama"
-        className="w-full border border-gray-500 p-2 rounded-[12px] mb-4 px-5 py-4"
-        required
-      />
+      <select
+          name="ibuAgama"
+          value={formData.ibuAgama}
+          onChange={handleChange}
+          className="lg:w-[455px] w-full border border-gray-500 p-2 rounded-[12px] px-5 py-4 text-[#12121299]"
+          required
+        >
+          <option value="">Opsi Pilihan</option>
+          <option value="Tidak Sekolah">Islam</option>
+          <option value="SD">Kristen Protestan</option>
+          <option value="SMP">Katolik</option>
+          <option value="SMA/SMK">Hindu</option>
+          <option value="Diploma">Buddha</option>
+          <option value="Sarjana">KongHucu</option>
+          <option value="Pascasarjana">Lainnya</option>
+        </select>
 
-      <label className="block mb-2 text-[#12121299] font-semibold">
+      <label className="block mb-2 mt-4 text-[#12121299] font-semibold">
         Pendidikan Terakhir <span className="text-red-600">*</span>
       </label>
       <select
@@ -251,15 +258,22 @@ function Step2IdentitasOrangTua({
         <label className="block mb-2 text-[#12121299] font-semibold">
           Agama <span className="text-red-600">*</span>
         </label>
-        <input
-          type="text"
+        <select
           name="waliAgama"
           value={formData.waliAgama}
           onChange={handleChange}
-          placeholder="Ketik Agama"
-          className="w-full border border-gray-500 p-2 rounded-[12px] px-5 py-4"
+          className="lg:w-[455px] w-full border border-gray-500 p-2 rounded-[12px] px-5 py-4 text-[#12121299]"
           required
-        />
+        >
+          <option value="">Opsi Pilihan</option>
+          <option value="Tidak Sekolah">Islam</option>
+          <option value="SD">Kristen Protestan</option>
+          <option value="SMP">Katolik</option>
+          <option value="SMA/SMK">Hindu</option>
+          <option value="Diploma">Buddha</option>
+          <option value="Sarjana">KongHucu</option>
+          <option value="Pascasarjana">Lainnya</option>
+        </select>
       </div>
 
       <div className="mb-4">
@@ -359,7 +373,14 @@ function Step2IdentitasOrangTua({
         />
       </div>
 
-      <div className="flex justify-end">
+      <div className="flex justify-between mt-6">
+        <button
+          type="button"
+          onClick={prevStep}
+          className="bg-gray-500 text-white px-6 py-2 rounded-full hover:bg-gray-600 transition"
+        >
+          Kembali
+        </button>
         <button
           onClick={nextStep}
           className="bg-[#EC901D] hover:bg-orange-600 text-white px-6 py-2 rounded-full cursor-pointer"
